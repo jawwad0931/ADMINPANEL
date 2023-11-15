@@ -26,7 +26,7 @@ if(isset($_POST['Login'])) {
     } 
     else {
         $_SESSION['status'] = 'Access Denied Something went wrong';
-        header("Location: Login.php");
+        header("Location: UserLogin.php");
     }
 }
 ?>
