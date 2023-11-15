@@ -46,7 +46,7 @@ if(isset($_POST['AddUser'])){
         session_destroy();
         unset($_SESSION['auth']);
         unset($_SESSION['auth_user']);
-        header('location: Login.php');
+        header('location: UserLogin.php');
         exit(0);
     }   
 ?>
