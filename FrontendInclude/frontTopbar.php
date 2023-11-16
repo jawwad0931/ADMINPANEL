@@ -10,10 +10,10 @@
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="#">Home</a>
+          <a class="nav-link text-dark active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="#">About</a>
+          <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="#">Team</a>
@@ -25,7 +25,7 @@
           <a class="nav-link text-dark active" aria-current="page" href="#">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="#">Appointment</a>
+          <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>
         </li>
       </ul>
     </div>

@@ -51,6 +51,14 @@ include('includes/topbar.php');
               <div class="modal-content">
                 <form Action='imagecode.php' method='POST' enctype="multipart/form-data">
                   <div class="modal-body">
+                  <div class="form-group">
+                      <label for="Lawyer Name">Lawyer Name</label>
+                      <input type="text" class="form-control" id="Lawyer Name" name="Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="Lawyer Desc">Lawyer Description</label>
+                      <input type="text" class="form-control" id="Lawyer Desc" name="Desc" required>
+                    </div>
                     <div class="form-group">
                       <label for="image">Image</label>
                       <input type="file" class="form-control" id="image" name="image" required>
@@ -77,6 +85,8 @@ include('includes/topbar.php');
             <thead>
               <tr>
                 <th>Id</th>
+                <th>Lawyer Name</th>
+                <th>Description</th>
                 <th>Image</th>
               </tr>
             </thead>
@@ -89,9 +99,13 @@ include('includes/topbar.php');
                 if ($query) {
                   while ($row = mysqli_fetch_assoc($query)) {
                     $id = $row['Id'];
+                    $Name = $row['Name'];
+                    $Desc = $row['Desc'];
                     $image = $row['image'];
                     echo "<tr>
                             <td>$id</td>
+                            <td>$Name</td>
+                            <td>$Desc</td>
                             <td>$image</td>
                             <td>
                             <a href='updateImage.php?updImgId=$id' class='btn btn-success'>Edit</a>
@@ -110,5 +124,6 @@ include('includes/topbar.php');
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php include('includes/footer.php'); ?>

@@ -14,7 +14,7 @@ include("FrontendInclude/frontTopbar.php");
     <!--Team section starts here-->
     <section class="lawyer my-5" id="lawyer">
         <div class="container">
-            <h2 class="text-center"> Meet our Team </h2>
+            <h2 class="text-center"> Meet our Lawyers </h2>
             <div class="row">
                 <div class="container">
                     <div class="row">
@@ -31,23 +31,21 @@ include("FrontendInclude/frontTopbar.php");
                                 <img src="img/' . $fetch["image"] . '" width="100" class="card-img-top" alt="Placeholder Image">
                                 <div class="card-title-wrap">
                                     <span class="card-title"> ' . $fetch["Name"] . ' </span>
-                                    <span class="card-text"> ' . $fetch["Profession"] . ' </span>
+                                    <p class="card-text fs-6"> ' . $fetch["Desc"] . ' </p>
                                 </div>
                                 <div class="lawyer-over">
-                                    <h4 class="hidden-md-down"> Connect With Me </h4>
+                                    <h4 class="hidden-md-down fs-3"> Connect This Lawyer </h4>
                                     <nav class="social-nav">
-                                        <a href="https://twitter.com/?lang=en">
+                                        <a href="www.twitter.com">
                                             <i class="bi bi-twitter"></i>
                                         </a>
-                                        <a href="https://web.facebook.com/?_rdc=1&_rd">
+                                        <a href="www.facebook.com">
                                             <i class="bi bi-facebook"></i>
                                         </a>
-                                        <a href="https://business.linkedin.com/marketing-solutions/linkedin-pages?trk=sem_lms_gaw&src=go-pa&veh=LMS_EMEA_Deprioritized_ROE_Search_Google-Brand_DR-PRS_Broad_Pages-Alpha_All_English_Core_415758549117__linkedin%20pages_c__kwd-344541005691_9216596363&mcid=6612464045041733646&cname=LMS_EMEA_Deprioritized_ROE_Search_Google-Brand_DR-PRS_Broad_Pages-Alpha_All_English_Core&camid=9216596363&asid=94475519438&targetid=kwd-344541005691&crid=415758549117&placement=&dev=c&ends=1&gclid=Cj0KCQiA-aGCBhCwARIsAHDl5x_2bYQsqI-0nC3xjWb7JsvXFFlz0exzM6Hbf0H9sVUjUwIBNJ5ObH4aApDJEALw_wcB&gclsrc=aw.ds">
+                                        <a href="www.linkedin.com">
                                             <i class="bi bi-linkedin"></i>
                                         </a>
                                     </nav>
-                                    <p>The form of the guarantee of conditions of life of society, assured by State’s power
-                                        of constraint.</p>
                                 </div>
                             </a>
                         </div>

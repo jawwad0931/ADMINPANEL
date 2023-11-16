@@ -51,8 +51,10 @@ include('includes/topbar.php');
     if(isset($_GET['ImgIdupd'])){
     error_reporting(0);
     $id = $_GET['ImgIdupd'];
+    $Name = $_POST['Name']; 
+    $Desc = $_POST['Desc']; 
     $image = $_POST['image']; 
-    $upd = "UPDATE `updateimage` SET `image`='$image' WHERE Id = $id";
+    $upd = "UPDATE `updateimage` SET `Name`='$Name' ,`Desc`='$Desc' , `image`='$image' WHERE Id = $id";
     $sql = mysqli_query($conn, $upd);
     if ($sql) {
         echo "<script>
@@ -75,6 +77,16 @@ include('includes/topbar.php');
                     <!-- /.card-header -->
                     <div class="card-body">
                         <form action="updateImage.php?ImgIdupd=<?php echo $id ?>" method='POST'>
+                            <div class="form-group">
+                                <label for="Lawyer Name">Lawyer Name</label>
+                                <input type="text" class="form-control" id="Lawyer Name" name="Name"
+                                    placeholder="" value="<?php echo $Name; ?>" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Desc">Lawyer Description</label>
+                                <input type="text" class="form-control" id="Desc" name="Desc"
+                                    placeholder="" value="<?php echo $Desc; ?>" required>
+                            </div>
                             <div class="form-group">
                                 <label for="name">Update Image</label>
                                 <input type="file" class="form-control" id="image" name="image"
