@@ -47,12 +47,17 @@
         </li>
         <li class="nav-item">
           <a href="AppointLawyer.php" class="nav-link">
-            <p>Role for users</p>
+            <p>User Booking Appointment</p>
           </a>
         </li>
         <li class="nav-item">
           <a href="UpdateLawyer.php" class="nav-link">
             <p>Update Lawyer</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="Service.php" class="nav-link">
+            <p>Services Update</p>
           </a>
         </li>
       </ul>
