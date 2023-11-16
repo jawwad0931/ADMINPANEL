@@ -50,6 +50,11 @@
             <p>Role for users</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="UpdateLawyer.php" class="nav-link">
+            <p>Update Lawyer</p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->

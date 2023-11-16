@@ -1,0 +1,28 @@
+/* HEADER starts here */
+/* Animated Nav links */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color:black;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-brand img{
+    height: 35px;
+    width: 35px;
+}
+/* header ends here */
