@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2023 at 07:03 AM
+-- Generation Time: Nov 19, 2023 at 11:25 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -45,6 +45,53 @@ INSERT INTO `appointlawyer` (`Id`, `FullName`, `Serivce`, `AppointDate`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `services`
+--
+
+CREATE TABLE `services` (
+  `Id` int(100) NOT NULL,
+  `Image` varchar(100) NOT NULL,
+  `Servicetype` varchar(100) NOT NULL,
+  `LawyerDesc` varchar(1000) NOT NULL,
+  `fees` int(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`Id`, `Image`, `Servicetype`, `LawyerDesc`, `fees`) VALUES
+(24, 'Asset/dist/img/2023-05-10 (2).png', 'Divorce', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 45435),
+(25, 'book-img-header.jpg', 'Family', 'As a Divorce Lawyer, your primary focus is on guiding clients through the legal intricacies of divorce proceedings. Responsibilities include providing legal advice, negotiating settlements, and representing clients in court when needed. Key tasks involve addressing issues like child custody, spousal support, and property division. Essential qualifications include a JD degree, bar admission, strong communication skills, and empathy to navigate emotionally charged situations. Your role is crucial in achieving fair and just outcomes for clients during challenging times.', 23412321),
+(26, 'child-custody.jpeg', 'Family', 'As a Divorce Lawyer, your primary focus is on guiding clients through the legal intricacies of divorce proceedings. Responsibilities include providing legal advice, negotiating settlements, and representing clients in court when needed. Key tasks involve addressing issues like child custody, spousal support, and property division. Essential qualifications include a JD degree, bar admission, strong communication skills, and empathy to navigate emotionally charged situations. Your role is crucial in achieving fair and just outcomes for clients during challenging times.', 1111111111),
+(28, 'code-g32ca37dbd_1920.jpg', 'Labor Law', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 11111111),
+(29, '60710918_105310480712211_6235924989145513984_n.jpg', 'Family', 'As a Divorce Lawyer, your primary focus is on guiding clients through the legal intricacies of divorce proceedings. Responsibilities include providing legal advice, negotiating settlements, and representing clients in court when needed. Key tasks involve addressing issues like child custody, spousal support, and property division. Essential qualifications include a JD degree, bar admission, strong communication skills, and empathy to navigate emotionally charged situations. Your role is crucial in achieving fair and just outcomes for clients during challenging times.', 11111);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `updateimage`
+--
+
+CREATE TABLE `updateimage` (
+  `Id` int(100) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `Desc` varchar(100) NOT NULL,
+  `image` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `updateimage`
+--
+
+INSERT INTO `updateimage` (`Id`, `Name`, `Desc`, `image`) VALUES
+(15, 'jawwad', 'divorce', '60710918_105310480712211_6235924989145513984_n.jpg'),
+(16, 'khan', 'divorce', 'WIN_20220219_10_10_08_Pro.jpg'),
+(17, 'Mehul', 'jawwad khan is the good lawyer at all time he fight biggest cases ', 'copy img.jpg');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user-table`
 --
 
@@ -63,12 +110,7 @@ CREATE TABLE `user-table` (
 --
 
 INSERT INTO `user-table` (`Id`, `Name`, `Email`, `Phone`, `Password`, `role_as`, `Created at`) VALUES
-(1, 'khan', 'jawwad@gmail.com', 2147483647, 'fgdfgfdbfdv5e6dfgfdgdf', 0, NULL),
-(2, 'khan', 'jawwadk638@gmail.com', 5645654, 'ghgfhfg', 0, NULL),
-(3, 'khan', 'jawwad@gmail.com', 2147483647, 'fsdfsfds', 0, NULL),
-(6, 'jk', 'jawwad12@gmail.com', 2147483647, '123', 0, NULL),
-(7, 'asAS', 'kh@gmail.com', 4324324, '123', 0, NULL),
-(8, 'khan', 'ab@gmail.com', 2147483647, 'abc', 1, NULL);
+(10, 'jawwad', 'jawwadkhan@gmail.com', 340002880, '123', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -102,6 +144,18 @@ ALTER TABLE `appointlawyer`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `services`
+--
+ALTER TABLE `services`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indexes for table `updateimage`
+--
+ALTER TABLE `updateimage`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `user-table`
 --
 ALTER TABLE `user-table`
@@ -124,10 +178,22 @@ ALTER TABLE `appointlawyer`
   MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
+-- AUTO_INCREMENT for table `services`
+--
+ALTER TABLE `services`
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+
+--
+-- AUTO_INCREMENT for table `updateimage`
+--
+ALTER TABLE `updateimage`
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
+--
 -- AUTO_INCREMENT for table `user-table`
 --
 ALTER TABLE `user-table`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `user-table2`
