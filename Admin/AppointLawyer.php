@@ -13,7 +13,7 @@ include('includes/topbar.php');
     <div class="row">
       <div class="col-12">
         <div class="card bg-light  mt-2 mb-2">
-          <h4 class="card-title pt-3 pb-3 ml-2">Registration table</h4>
+          <h4 class="card-title pt-3 pb-3 ml-2">User Appointment table</h4>
         </div>
         <div class="table-responsive">
           <table class="table table-dark table-striped table-bordered table-hover">

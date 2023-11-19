@@ -54,11 +54,11 @@ include('includes/topbar.php');
                                         <div class="form-group">
                                             <label for="Image">Image</label>
                                             <input type="file" class="form-control" id="Image" name="Image"
-                                                placeholder="Enter your email" required>
+                                                placeholder="Enter your email">
                                         </div>
                                         <div class="form-group">
                                             <label for="service" class="services" id="services">Serivce Type</label>
-                                            <select name="servicetype" id="service" class="form-control" required>
+                                            <select name="Servicetype" id="service" class="form-control" required>
                                                 <option value=""></option>
                                                 <option value="Divorce">Divorce</option>
                                                 <option value="Family">Family</option>
@@ -70,8 +70,8 @@ include('includes/topbar.php');
                                         </div>
                                         <div class="form-group">
                                             <label for="description">Description</label>
-                                            <input type="text" class="form-control" id="description" name="desc"
-                                                placeholder="Enter your email" required>
+                                            <input type="text" class="form-control" id="description" name="LawyerDesc"
+                                                placeholder="Enter your Description" required>
                                         </div>
                                         <div class="form-group">
                                             <label for="fees">Fees</label>
@@ -119,23 +119,24 @@ include('includes/topbar.php');
                                         $Id = $rows['Id'];
                                         $Image = $rows['Image'];
                                         $Servicetype = $rows['Servicetype'];
-                                        $desc = $rows['description'];
+                                        $LawyerDesc = $rows['LawyerDesc'];
                                         $fees = $rows['fees'];
                                         echo "<tr>
                                             <td>$Image</td>
                                             <td>$Servicetype</td>
-                                            <td>$desc</td>
+                                            <td>$LawyerDesc</td>
                                             <td>$fees</td>
                                             <td>
-                                                <a href='serviceupdate.php?serviceupdId=$Id' class='btn btn-success'>Edit</a>
+                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-primary'>Edit</a>
                                                 <a href='servicedelete.php?servicedltid=$Id' class='btn btn-danger'>Delete</a>
                                             </td>
                                         </tr>";
-
                                     }
                                 }
                             }
                             ?>
+
+
                         <tbody>
                     </table>
                 </div>

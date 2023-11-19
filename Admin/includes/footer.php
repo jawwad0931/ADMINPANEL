@@ -1,24 +1,37 @@
-<!-- footer start -->
-<section class="">
-  <footer class="text-center text-white bg-dark">
-    <div class="container p-4 pb-0">
-      <section class="">
-        <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3">Register for free</span>
-          <button type="button" class="btn btn-outline-light btn-rounded">
-            Sign up!
-          </button>
-        </p>
-      </section>
+ <!-- Footer Start -->
+ <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Company</h5>
+                    <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                    <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link text-white-50" href="Team.html">Our Services</a>
+                    <a class="btn btn-link text-white-50" href="ter&con.html">Terms & Condition</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link text-white-50" href="about.html">About Us</a>
+                    <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link text-white-50" href="Team.html">Our Services</a>
+                    <a class="btn btn-link text-white-50" href="ter&con.html">Terms & Condition</a>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-white mb-4">Contact</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Clifton,Karachi,Pakistan</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+923085499310</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>jawwadk638@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="">LawyerWebpage</a>
-    </div>
-  </footer>
-</section>
-<!-- footer end -->
-<!-- jQuery -->
+    <!-- Footer End -->
 <script src="Asset/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
 <script src="Asset/plugins/jquery-ui/jquery-ui.min.js"></script>

@@ -22,7 +22,7 @@ include("FrontendInclude/frontTopbar.php");
                         $sltImage = "SELECT * FROM `updateimage`";
                         $result = mysqli_query($conn, $sltImage);
                         if (!$result) {
-                            die("Error in SQL query: " . mysqli_error($conn));
+                            die(mysqli_error($conn));
                         } else {
                             while ($fetch = mysqli_fetch_assoc($result)) {
                                 echo '<div class="col-sm-6 col-md-3 d-flex flex-wrap">
