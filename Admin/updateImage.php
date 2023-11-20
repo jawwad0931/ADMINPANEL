@@ -34,38 +34,70 @@ include('includes/topbar.php');
     </div>
     <!-- View Data in input field-->
     <?php
-    include('Config/db.php');
     if (isset($_GET['updImgId'])) {
         $id = $_GET['updImgId'];
-        $slt = "SELECT * FROM `updateimage` WHERE Id = $id";
+        $slt = "SELECT * FROM `updateimage` WHERE Id = '$id'";
         $query = mysqli_query($conn, $slt);
         if ($query) {
-            $row = mysqli_fetch_assoc($query); 
-            $image = $row['image'];
+            $row = mysqli_fetch_assoc($query);
+            $Image = $row['image'];
+            $Name = $row['Name'];
+            $Desc = $row['Desc'];
+        } else {
+            echo "Error executing the query: " . mysqli_error($conn);
+        }
+    }
+
+
+    
+    // Update data in input field
+    if (isset($_GET['ImgIdupd'])) {
+        error_reporting(0);
+        $id = $_GET['ImgIdupd'];
+        $Image = $_POST['Image']; // Initialize $Image variable
+    
+        if ($_FILES['Image']['name']) {
+            $target_dir = "../img/"; // Change this to your desired directory
+            $target_file = $target_dir . basename($_FILES["Image"]["name"]);
+
+            if (move_uploaded_file($_FILES["Image"]["tmp_name"], $target_file)) {
+                $Image = $target_file;
+                $Name = $_POST['Name'];
+                $Desc = $_POST['Desc'];
+                $Imageupdate_run = "UPDATE `updateimage` SET `image`='$Image', `Name`='$Name', `Desc`='$Desc'  WHERE Id = '$id'";
+                $sql = mysqli_query($conn, $Imageupdate_run);
+
+                if ($sql) {
+                    echo "<script>
+                    alert('Data successfully updated');
+                    window.location.href = 'updatelawyer.php';
+                </script>";
+                } else {
+                    echo "<script>alert('Error updating data: " . mysqli_error($conn) . "')</script>";
+                }
+            } else {
+                echo "<script>alert('Error uploading file')</script>";
+            }
+        } else {
+            // If no new file is uploaded, update other fields in the database
+            $Name = $_POST['Name'];
+            $Desc = $_POST['Desc'];
+            $Imageupdate_run = "UPDATE `updateimage` SET  `Name`='$Name', `Desc`='$Desc'   WHERE Id = '$id'";
+            $sql = mysqli_query($conn, $Imageupdate_run);
+
+            if ($sql) {
+                echo "<script>
+                alert('Data successfully updated');
+                window.location.href = 'updatelawyer.php';
+            </script>";
+            } else {
+                echo "<script>alert('Error updating data: " . mysqli_error($conn) . "')</script>";
+            }
         }
     }
     ?>
 
-    <!-- Update data in input field -->
-    <?php
-    if(isset($_GET['ImgIdupd'])){
-    error_reporting(0);
-    $id = $_GET['ImgIdupd'];
-    $Name = $_POST['Name']; 
-    $Desc = $_POST['Desc']; 
-    $image = $_POST['image']; 
-    $upd = "UPDATE `updateimage` SET `Name`='$Name' ,`Desc`='$Desc' , `image`='$image' WHERE Id = $id";
-    $sql = mysqli_query($conn, $upd);
-    if ($sql) {
-        echo "<script>
-        alert('Data successfully updated');
-        window.location.href = 'UpdateLawyer.php';
-        </script>";
-    } else {
-        echo "<script>alert('Error Found!!!')</script>";
-    }    
-    }
-    ?>
+    
     <!-- Update form -->
     <div class="container">
         <div class="row">
@@ -76,27 +108,26 @@ include('includes/topbar.php');
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <form action="updateImage.php?ImgIdupd=<?php echo $id ?>" method='POST'>
+                        <form action="updateImage.php?ImgIdupd=<?php echo $id ?>" method='POST' enctype='multipart/form-data'>
                             <div class="form-group">
                                 <label for="Lawyer Name">Lawyer Name</label>
-                                <input type="text" class="form-control" id="Lawyer Name" name="Name"
-                                    placeholder="" value="<?php echo $Name; ?>" required>
+                                <input type="text" class="form-control" id="Lawyer Name" name="Name" placeholder=""
+                                    value="<?php echo $Name; ?>" required>
                             </div>
                             <div class="form-group">
                                 <label for="Desc">Lawyer Description</label>
-                                <input type="text" class="form-control" id="Desc" name="Desc"
-                                    placeholder="" value="<?php echo $Desc; ?>" required>
+                                <input type="text" class="form-control" id="Desc" name="Desc" placeholder=""
+                                    value="<?php echo $Desc; ?>" required>
                             </div>
                             <div class="form-group">
-                                <label for="name">Update Image</label>
-                                <input type="file" class="form-control" id="image" name="image"
-                                    placeholder="" value="<?php echo $image; ?>" required>
+                                <label for="newImage">New Image</label>
+                                <input type="file" class="form-control" id="Image" name="Image"
+                                    placeholder="Choose a new image">
                             </div>
                             <div class="modal-footer">
-                                <button type="submit" class="btn btn-secondary" name='AddUser'>Update</button>
+                                <button type="submit" class="btn btn-secondary" name='AddImage'>Update</button>
                             </div>
                         </form>
-                        <?php include('includes/footer.php'); ?>
                     </div>
                 </div>
             </div>

@@ -17,17 +17,13 @@
   <link rel="stylesheet" href="Asset/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="Asset/dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="Asset/dist/css/index.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="Asset/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
   <link rel="stylesheet" href="Asset/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
   <link rel="stylesheet" href="Asset/plugins/summernote/summernote-bs4.min.css">
-    <!-- DataTables -->
-    <link rel="stylesheet" href="Asset/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
-  <link rel="stylesheet" href="Asset/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
-  <link rel="stylesheet" href="Asset/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
-  
   <!--Footer Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">

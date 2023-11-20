@@ -25,7 +25,7 @@
       echo '
       <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
         <div class="card mb-3">
-          <img src="img/' . $ServiceRow["Image"] . '" class="card-img-top" alt="Placeholder Image">
+          <img src="img/' . $ServiceRow["Image"] . '" class="card-img-top" alt="Placeholder Image" height="300px">
           <div class="card-body">
             <h5 class="card-title">'. $ServiceRow["Servicetype"] .'</h5>
             <p class="card-text">' . $ServiceRow["LawyerDesc"] . '</p>

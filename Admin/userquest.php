@@ -28,16 +28,18 @@ include('includes/topbar.php');
     <div class="row">
       <div class="col-12">
         <div class="card bg-light  pt-3 pb-3">
-          <h4 class="fs-1 pl-3">User Appointment table</h4>
+          <h4 class="fs-1 pl-3">User Query</h4>
         </div>
         <div class="table-responsive">
           <table class="table table-dark table-striped table-bordered table-hover">
             <thead>
               <tr>
                 <th>Id</th>
-                <th>FullName</th>
-                <th>Services</th>
-                <th>AppointDate</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Question</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -45,19 +47,23 @@ include('includes/topbar.php');
               <?php
               include("Config/db.php");
               if ($conn) {
-                $Lawyerslt = "SELECT * FROM `appointlawyer`";
+                $questslt = "SELECT * FROM `user-table2`";
                 ;
-                $Run_detailsql = mysqli_query($conn, $Lawyerslt);
+                $Run_quest = mysqli_query($conn, $questslt);
 
                 // Check if any rows were returned
-                if (mysqli_num_rows($Run_detailsql) > 0) {
+                if (mysqli_num_rows($Run_quest) > 0) {
                   // Fetch data and output rows in the table
-                  while ($row = mysqli_fetch_assoc($Run_detailsql)) {
+                  while ($row = mysqli_fetch_assoc($Run_quest)) {
                     echo '<tr>
                         <td scope="row"> ' . $row['Id'] . '</td>
-                        <td scope="row"> ' . $row['FullName'] . '</td>
-                        <td scope="row"> ' . $row['Serivce'] . '</td> 
-                        <td scope="row"> ' . $row['AppointDate'] . '</td> 
+                        <td scope="row"> ' . $row['Name'] . '</td>
+                        <td scope="row"> ' . $row['Email'] . '</td> 
+                        <td scope="row"> ' . $row['Phone'] . '</td>
+                        <td scope="row"> ' . $row['Question'] . '</td> 
+                        <td scope="row">
+                            <a href="questDelete.php?questdltId=$Id" class="btn btn-outline-danger">Delete</a>
+                        </td> 
                         </tr>';
                   }
 

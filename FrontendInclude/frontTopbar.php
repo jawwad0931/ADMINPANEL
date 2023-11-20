@@ -22,7 +22,7 @@
           <a class="nav-link text-dark active" aria-current="page" href="services.php">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="#">Contact</a>
+          <a class="nav-link text-dark active" aria-current="page" href="Contact.php">Contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>

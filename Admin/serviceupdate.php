@@ -25,10 +25,10 @@ if (isset($_GET['ServiceupdId'])) {
 if (isset($_GET['ServiceIdupd'])) {
     error_reporting(0);
     $id = $_GET['ServiceIdupd'];
-    $Image = $_POST['Asset/dist/img/']; // Initialize $Image variable
+    $Image = $_POST['Image']; // Initialize $Image variable
 
     if ($_FILES['Image']['name']) {
-        $target_dir = "Asset/dist/img/"; // Change this to your desired directory
+        $target_dir = "../img/"; // Change this to your desired directory
         $target_file = $target_dir . basename($_FILES["Image"]["name"]);
 
         if (move_uploaded_file($_FILES["Image"]["tmp_name"], $target_file)) {
@@ -74,8 +74,24 @@ if (isset($_GET['ServiceIdupd'])) {
 
 
 ?>
-
-<!-- HTML Structure -->
+<!-- Content Wrapper -->
+<div class="content-wrapper">
+ <!-- Content Header -->
+ <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Dashboard</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="../index.php" class="text-dark">Back Home</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Popup Modal use for Crud -->
 <div class="container">
     <div class="row">
         <div class="col-12">
@@ -88,15 +104,15 @@ if (isset($_GET['ServiceIdupd'])) {
                         enctype="multipart/form-data">
                         <div class="modal-body">
                             <!-- Existing image display -->
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="existingImage">Existing Image</label>
                                 <img src="<?php echo $Image; ?>" alt="Existing Image" style="width: 100px;">
-                            </div>
+                            </div> -->
 
                             <!-- New image input -->
                             <div class="form-group">
                                 <label for="newImage">New Image</label>
-                                <input type="file" class="form-control" id="newImage" name="newImage"
+                                <input type="file" class="form-control" id="newImage" name="Image"
                                     placeholder="Choose a new image">
                             </div>
 
@@ -137,5 +153,5 @@ if (isset($_GET['ServiceIdupd'])) {
         </div>
     </div>
 </div>
-
+</div>
 <?php include('includes/footer.php'); ?>

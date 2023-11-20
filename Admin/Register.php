@@ -16,7 +16,7 @@ include('includes/topbar.php');
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="../index.php" class="text-dark">Back Home</a></li>
+            <li class="breadcrumb-item"><a href="/index.php" class="text-dark">Back Home</a></li>
           </ol>
         </div>
       </div>
@@ -140,5 +140,6 @@ include('includes/topbar.php');
       </div>
     </div>
   </div>
+</div>
 </div>
 <?php include('includes/footer.php'); ?>
