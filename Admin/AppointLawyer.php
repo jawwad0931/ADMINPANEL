@@ -38,6 +38,8 @@ include('includes/topbar.php');
                 <th>FullName</th>
                 <th>Services</th>
                 <th>AppointDate</th>
+                <th>status</th>
+                <th>toggle</th>
               </tr>
             </thead>
             <tbody>
@@ -53,14 +55,28 @@ include('includes/topbar.php');
                 if (mysqli_num_rows($Run_detailsql) > 0) {
                   // Fetch data and output rows in the table
                   while ($row = mysqli_fetch_assoc($Run_detailsql)) {
-                    echo '<tr>
-                        <td scope="row"> ' . $row['Id'] . '</td>
-                        <td scope="row"> ' . $row['FullName'] . '</td>
-                        <td scope="row"> ' . $row['Serivce'] . '</td> 
-                        <td scope="row"> ' . $row['AppointDate'] . '</td> 
-                        </tr>';
+                    echo "<tr>
+                      <td scope='row'> " . $row['Id'] . "</td>
+                      <td scope='row'> " . $row['FullName'] . "</td>
+                      <td scope='row'> " . $row['Serivce'] . "</td> 
+                      <td scope='row'> " . $row['AppointDate'] . "</td> 
+                      <td>";
+                      if ($row['status'] == "1") {
+                          echo 'pending';
+                      } else {
+                          echo 'complete';
+                      }
+                      echo "</td>
+                      <td>";                     
+                      // Generate link based on the value of $course['status']
+                      if ($row['status'] == "1") {
+                          echo "<a href='deactivate.php?deactivateId=" . $row['Id'] . "' class='btn btn-danger'>Pending</a>";
+                      } else {
+                          echo "<a href='activate.php?activateId=" . $row['Id'] . "' class='btn btn-success'>Complete</a>";
+                      }
+                      echo "</td>                     
+                    </tr>";
                   }
-
                   echo '</tbody>
                     </table>';
                 } else {

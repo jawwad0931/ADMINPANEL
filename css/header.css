@@ -26,3 +26,10 @@
     width: 35px;
 }
 /* header ends here */
+
+
+/* Header Image Here */
+/* Contact Header Changing */
+.contactBg{
+    background-image: url('/img/cont.jpg') !important;
+  }

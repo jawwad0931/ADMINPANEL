@@ -108,8 +108,8 @@ include('includes/topbar.php');
                             <td>$Desc</td>
                             <td>$image</td>
                             <td>
-                            <a href='updateImage.php?updImgId=$id' class='btn btn-success'>Edit</a>
-                            <a href='deleteImage.php?deleteImgid=$id' class='btn btn-danger'>Delete</a>
+                            <a href='updateImage.php?updImgId=$id' class='btn btn-outline-success m-1'>Edit</a>
+                            <a href='deleteImage.php?deleteImgid=$id' class='btn btn-outline-danger m-1'>Delete</a>
                             </td>
                             </tr>";
                   }

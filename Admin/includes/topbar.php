@@ -32,7 +32,7 @@
           ?>
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="index.php">Back Home</a>
           <form action="code.php" method="post">
             <button type='submit' name='logoutbtn' class='dropdown-item'>Logout</button>
           </form>

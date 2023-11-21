@@ -127,8 +127,8 @@ include('includes/topbar.php');
                                             <td>$LawyerDesc</td>
                                             <td>$fees</td>
                                             <td>
-                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-primary'>Edit</a>
-                                                <a href='servicedelete.php?servicedltid=$Id' class='btn btn-danger'>Delete</a>
+                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-outline-primary'>Edit</a>
+                                                <a href='servicedelete.php?servicedltid=$Id' class='btn btn-outline-danger'>Delete</a>
                                             </td>
                                         </tr>";
                                     }
@@ -143,5 +143,6 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
+</div>
 </div>
 <?php include('includes/footer.php'); ?>

@@ -3,13 +3,15 @@
     include("FrontendInclude/frontHeader.php");
     include("FrontendInclude/frontTopbar.php");
 ?>
+<!-- Header Start -->
+<div class="container-fluid py-5  mb-5" style="background-image:url('img/cont.jpg');background-size:cover;height:500px;">
+            <div class="container my-5 pt-5 pb-4">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">Practice Areas</h1>
+            </div>
+        </div>
+        <!-- Header End -->
 <!-- BEGINNING OF SERVICE PAGE BODY -->
   <div class="container-flex">
-    <div class="background-img">
-      <div class="background-img-text">
-        <h1>PRACTICE AREAS</h1>
-      </div>
-    </div>
     <!-- CONTAINER CLASS WITH SERVICE CARDS -->
     <?php 
   $servicequery = "SELECT * FROM `services`";

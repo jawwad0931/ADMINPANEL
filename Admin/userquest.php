@@ -55,16 +55,27 @@ include('includes/topbar.php');
                 if (mysqli_num_rows($Run_quest) > 0) {
                   // Fetch data and output rows in the table
                   while ($row = mysqli_fetch_assoc($Run_quest)) {
-                    echo '<tr>
-                        <td scope="row"> ' . $row['Id'] . '</td>
-                        <td scope="row"> ' . $row['Name'] . '</td>
-                        <td scope="row"> ' . $row['Email'] . '</td> 
-                        <td scope="row"> ' . $row['Phone'] . '</td>
-                        <td scope="row"> ' . $row['Question'] . '</td> 
-                        <td scope="row">
-                            <a href="questDelete.php?questdltId=$Id" class="btn btn-outline-danger">Delete</a>
-                        </td> 
-                        </tr>';
+                    // echo "<tr>
+                    //     <td scope='row'> ' . $row['Id'] . '</td>
+                    //     <td scope='row'> ' . $row['Name'] . '</td>
+                    //     <td scope='row'> ' . $row['Email'] . '</td> 
+                    //     <td scope='row'> ' . $row['Phone'] . '</td>
+                    //     <td scope='row'> ' . $row['Question'] . '</td> 
+                    //     <td scope='row'>
+                    //     <a href='questDelete.php?questdltId=$Id' class='btn btn-outline-danger'>Delete</a>
+                    //     </td> 
+                    //     </tr>";
+                    echo "<tr>
+                      <td scope='row'> " . $row['Id'] . "</td>
+                      <td scope='row'> " . $row['Name'] . "</td>
+                      <td scope='row'> " . $row['Email'] . "</td> 
+                      <td scope='row'> " . $row['Phone'] . "</td>
+                      <td scope='row'> " . $row['Question'] . "</td> 
+                      <td scope='row'>
+                          <a href='questDelete.php?questdltId=" . $row['Id'] . "' class='btn btn-outline-danger'>Delete</a>
+                      </td> 
+                    </tr>";
+
                   }
 
                   echo '</tbody>

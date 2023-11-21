@@ -8,7 +8,7 @@ if (isset($_SESSION['auth'])) {
   exit();
 }
 ?>
-<div class="container-fluid" style="background-image:url('Asset/dist/img/blackbg2.jpg');">
+<div class="container-fluid" style="background-image:url('Asset/dist/img/LoginImage.jpg'); background-size:cover;">
 <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
   <div class="container">
     <div class="row">

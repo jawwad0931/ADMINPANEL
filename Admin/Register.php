@@ -16,7 +16,7 @@ include('includes/topbar.php');
         </div>
         <div class="col-sm-6">
           <ol class="breadcrumb float-sm-right">
-            <li class="breadcrumb-item"><a href="/index.php" class="text-dark">Back Home</a></li>
+            <li class="breadcrumb-item"><a href="index.php" class="text-dark">Back Home</a></li>
           </ol>
         </div>
       </div>
@@ -126,8 +126,8 @@ include('includes/topbar.php');
                             <td>$email</td>
                             <td>$phone </td>
                             <td>
-                            <a href='update.php?updId=$id' class='btn btn-success'>Edit</a>
-                            <a href='delete.php?deleteid=$id' class='btn btn-danger'>Delete</a>
+                            <a href='update.php?updId=$id' class='btn btn-outline-success'>Edit</a>
+                            <a href='delete.php?deleteid=$id' class='btn btn-outline-danger'>Delete</a>
                             </td>
                             </tr>";
                   }

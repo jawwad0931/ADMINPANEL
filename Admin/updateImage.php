@@ -15,7 +15,7 @@ include('includes/topbar.php');
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php" class="text-dark">Back Home</a></li>
                     </ol>
                 </div>
             </div>
@@ -28,7 +28,7 @@ include('includes/topbar.php');
                 <h4>Update Image</h4>
             </div>
             <div class="col-6  d-flex justify-content-end">
-                <a href="Register.php" type="" class="btn btn-warning btn-sm">Back</a>
+                <a href="Register.php" type="" class="btn btn-info btn-sm">Back</a>
             </div>
         </div>
     </div>
@@ -133,3 +133,4 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
+    <?php include('includes/footer.php'); ?>
