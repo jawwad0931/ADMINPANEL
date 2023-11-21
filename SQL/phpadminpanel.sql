@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 20, 2023 at 11:54 PM
+-- Generation Time: Nov 22, 2023 at 12:03 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -31,16 +31,18 @@ CREATE TABLE `appointlawyer` (
   `Id` int(100) NOT NULL,
   `FullName` varchar(100) NOT NULL,
   `Serivce` varchar(100) NOT NULL,
-  `AppointDate` date NOT NULL
+  `AppointDate` date NOT NULL,
+  `status` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `appointlawyer`
 --
 
-INSERT INTO `appointlawyer` (`Id`, `FullName`, `Serivce`, `AppointDate`) VALUES
-(1, 'hakem', 'advocate', '2023-11-14'),
-(2, 'muhammad', 'Family', '2023-11-08');
+INSERT INTO `appointlawyer` (`Id`, `FullName`, `Serivce`, `AppointDate`, `status`) VALUES
+(1, 'hakem', 'advocate', '2023-11-14', 1),
+(2, 'muhammad', 'Family', '2023-11-08', 0),
+(3, 'Malik khan', 'Advocate', '2023-11-14', 0);
 
 -- --------------------------------------------------------
 
@@ -61,11 +63,7 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`Id`, `Image`, `Servicetype`, `LawyerDesc`, `fees`) VALUES
-(28, 'code-g32ca37dbd_1920.jpg', 'Labor Law', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 11111111),
-(29, '60710918_105310480712211_6235924989145513984_n.jpg', 'Family', 'As a Divorce Lawyer, your primary focus is on guiding clients through the legal intricacies of divorce proceedings. Responsibilities include providing legal advice, negotiating settlements, and representing clients in court when needed. Key tasks involve addressing issues like child custody, spousal support, and property division. Essential qualifications include a JD degree, bar admission, strong communication skills, and empathy to navigate emotionally charged situations. Your role is crucial in achieving fair and just outcomes for clients during challenging times.', 11111),
-(30, '60710918_105310480712211_6235924989145513984_n.jpg', 'Labor Law', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 70000),
-(31, '../img/2023-09-10.png', 'Personal Injury', 'As a Personal Injury Lawyer, your primary responsibility is to represent individuals who have suffered harm due to accidents or negligence. Your tasks include conducting legal research, negotiating settlements, and representing clients in court. Key qualifications include a JD degree, bar admission, strong advocacy skills, and a deep understanding of personal injury law. Your role is crucial in helping clients seek compensation for injuries and navigating the complexities of the legal system to ensure fair outcomes.', 11111111),
-(32, '2023-10-10 (1).png', 'Personal Injury', 'As a Commercial Lawyer, your role involves drafting and reviewing contracts, providing legal counsel on business matters, and ensuring corporate compliance. Key responsibilities include facilitating mergers and acquisitions, handling intellectual property issues, and resolving commercial disputes. Essential qualifications include a JD degree, bar admission, strong negotiation skills, and expertise in commercial law. Your contribution is vital in protecting and advancing the legal interests of the business.', 80000);
+(33, 'code-g32ca37dbd_1920.jpg', 'Family', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 20000);
 
 -- --------------------------------------------------------
 
@@ -131,10 +129,6 @@ CREATE TABLE `user-table2` (
 --
 
 INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
-(1, '', 'ALi@gmail.com', 0, 'hello this is my world'),
-(2, '', 'AliAn@gmail.com', 0, 'this messsage send from from user'),
-(3, '', 'ali@gmail.com', 0, 'Ali is good'),
-(4, 'khan', 'ab@gmail.com', 2147483647, 'rette'),
 (5, 'khan', 'ab@gmail.com', 2147483647, ''),
 (6, 'jawwad', 'jawwad@gmail.com', 2147483647, 'fsdafsdfsd');
 
@@ -180,13 +174,13 @@ ALTER TABLE `user-table2`
 -- AUTO_INCREMENT for table `appointlawyer`
 --
 ALTER TABLE `appointlawyer`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
 
 --
 -- AUTO_INCREMENT for table `updateimage`
