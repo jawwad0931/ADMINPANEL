@@ -1,9 +1,9 @@
 <?php
 session_start();
-include('Authentication.php');
 include('Config/db.php');
 include('includes/header.php');
 include('includes/sidebar.php');
+include('Authentication.php');
 include('includes/topbar.php');
 ?>
 <div class="content-wrapper">

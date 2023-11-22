@@ -11,6 +11,7 @@
             echo "Data Not inserted" . mysqli_error($conn);
         }else{
             echo "<script>alert('Data Inserted Succcessfully')</script>";
+            header("Location: Contact.php");
         }
 
     }

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $user = 'root';
 $pass = '';
 $db = 'sample tutorial';
@@ -35,4 +35,4 @@ $car_brands = mysqli_query($con, $sql);
     </form>
 </body>
 
-</html>
+</html> -->

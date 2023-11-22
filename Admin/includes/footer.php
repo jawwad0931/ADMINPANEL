@@ -15,14 +15,14 @@
             </div>
             <div class="col-lg-4 col-md-4">
                 <h5 class="text-white mb-4">Contact</h5>
-                <a href="https://www.google.com/maps/place/Clifton,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.818303,66.999063,14z/data=!3m1!4b1!4m6!3m5!1s0x3eb33dbbdc1875bf:0x6a6572ab3a66fed8!8m2!3d24.8269877!4d67.025096!16zL20vMGMwdmti?entry=ttu" class="text-white-50"><p class="mb-2"><i class="fa fa-map-marker-alt text-danger me-3"></i>Clifton,Karachi,Pakistan</p></a>
-                <a href="tel:+923085499310" class="text-white-50"><p class="mb-2"><i class="fa fa-phone-alt text-primary me-3"></i>+923085499310</p></a>
-                <a href="mailto:info@jobprep.com" class="text-white-50"><p class="mb-2"><i class="fa fa-envelope text-info me-3"></i>jawwadk638@gmail.com</p></a>
+                <a href="https://www.google.com/maps/place/Clifton,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.818303,66.999063,14z/data=!3m1!4b1!4m6!3m5!1s0x3eb33dbbdc1875bf:0x6a6572ab3a66fed8!8m2!3d24.8269877!4d67.025096!16zL20vMGMwdmti?entry=ttu" class="text-white-50 Contact"><p class="mb-2"><i class="fa fa-map-marker-alt text-danger me-3 icons"></i>Clifton,Karachi,Pakistan</p></a>
+                <a href="tel:+923085499310" class="text-white-50 Contact"><p class="mb-2"><i class="fa fa-phone-alt text-primary me-3 icons"></i>+923085499310</p></a>
+                <a href="mailto:info@jobprep.com" class="text-white-50 Contact"><p class="mb-2"><i class="fa fa-envelope text-info me-3 icons"></i>jawwadk638@gmail.com</p></a>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social mr-3" href="https://twitter.com/JobPrep2"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social mr-3" href="https://www.facebook.com/profile.php?id=61550471001860"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social mr-3" href="https://www.youtube.com/channel/UCCjONqDhNGQWVwpE86zdmig"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social mr-3" href="http://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mr-3" href="https://twitter.com/JobPrep2"><i class="ion-social-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mr-3" href="https://www.facebook.com/profile.php?id=61550471001860"><i class="ion-social-facebook"></i></a>
+                    <a class="btn btn-outline-light btn-social mr-3" href="https://www.youtube.com/channel/UCCjONqDhNGQWVwpE86zdmig"><i class="ion-social-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social mr-3" href="http://www.linkedin.com/"><i class="ion-social-linkedin"></i></a>
                 </div>
             </div>
         </div>

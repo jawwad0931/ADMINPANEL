@@ -1,6 +1,7 @@
 <?php
 session_start();
 include('Config/db.php');
+include('Authentication.php');
 include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
