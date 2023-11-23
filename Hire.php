@@ -23,15 +23,18 @@ include("FrontendInclude/frontTopbar.php");
         unset($_SESSION['status']);
       }
       ?>
-      <h2 class="book-title">Book your appointment</h2>
-      <div class="container">
-        <form action="HireCode.php" method="POST" class="info form-group" id="form-info">
+      <h2 class="book-title">Book Lawyer Appointment</h2>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6">
+    <form action="HireCode.php" method="POST" class="info form-group" id="form-info">
           <div class="card">
-            <div class="card-body flex-info-body">
-              <label for="names" class="names" id="names">Full Name</label>
+            <div class="card-body">
+              <label for="names" class="names w-100 text-left" id="">Full Name</label>
               <input type="text" value="" name="full_name" class="name form-control" id="fullname"><br>
-              <label for="service" class="services" id="services">Serivce</label>
-              <select name="service" id="service" class="form-control">
+              <label for="service" class="services w-100 text-left" id="services">Serivce</label>
+              <select name="service" id="service" class="form-control w-100 text-left">
                 <option value=""></option>
                 <option value="Divorce">Divorce</option>
                 <option value="Family">Family</option>
@@ -40,29 +43,36 @@ include("FrontendInclude/frontTopbar.php");
                 <option value="Commercial Law">Commercial Law</option>
                 <option value="Criminal Law">Criminal Law</option>
               </select>
-              <label for="day">Appointment</label>
+              <label for="day" class="w-100 text-left">Appointment</label>
               <input id="get-date" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
                 required>
-              <input type="submit" class="btn btn-primary" value="Submit" name="Appoint_Save">
+            <div class="w-100">
+              <input type="submit" class="btn btn-primary mt-3 float-start" value="Submit" name="Appoint_Save">
+            </div>
             </div>
           </div>
-      </div>
       </form>
-  </div>
   <!-- Appointment date display  -->
-  <div class="container">
-    <div class="card ">
-      <div class="card-body message">
+    </div>
+    <div class="col-lg-6">
+      <!-- Set Height of the card -->
+    <div class="card" style="height:88%;">
+      <div class="card-body">
         <div class="app-message">
           <div id="show-app">
-            <p class="message-text">Appointment: <span id="displayAppointment"></span></p>
-            <p class="message-text">Mode of Communication: <span id="modeOfComm"></span></p>
-            <p class="message-text">Service type: <span id="serviceType"></span></p>
+            <p class="message-text">Appointment: <span id="displayAppointment"></span></p><br>
+            <p class="message-text">Mode of Communication: <span id="modeOfComm"></span></p><br>
+            <p class="message-text">Service type: <span id="serviceType"></span></p><br>  
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
+
+
+
   </section>
     </div>
 <?php include("FrontendInclude/frontFooter.php") ?>

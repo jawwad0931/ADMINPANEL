@@ -1,4 +1,4 @@
-/* Footer  */
+*** Footer ***/
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -12,9 +12,13 @@
     transition: .3s;
 }
 
+.Contact .icons{
+    margin-right: 15px;
+}
+
 .footer .btn.btn-social:hover {
     /* color: var(--primary); */
-    color: rgba(74, 71, 71, 0.863);
+    color: rgba(32, 150, 219, 0.863);
     border-color: var(--light);
 }
 
@@ -67,5 +71,3 @@
     padding-right: 0;
     border-right: none;
 }
-
-/* End Footer Css Start */

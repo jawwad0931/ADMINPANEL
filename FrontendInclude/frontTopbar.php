@@ -15,9 +15,9 @@
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="#">Team</a>
-        </li>
+        </li> -->
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="services.php">Services</a>
         </li>
