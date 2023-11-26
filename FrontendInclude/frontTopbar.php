@@ -5,12 +5,12 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand text-dark" href="#">
-        <img src="./img/logoheader.png" alt="">
+        <img src="./img/justiceLogo.png" alt="" class="rounded-circle" style="height:50px; width:50px;">
     </a>
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="index.php">Home</a>
+          <a class="nav-link text-dark active" aria-current="page" href="home.php">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
@@ -27,9 +27,29 @@
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>
         </li>
+        <li>
+      <div class="dropdown">
+        <button class="btn btn-outline-dark dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          <?php
+          if (isset($_SESSION['auth'])) {
+            echo $_SESSION['auth_user']['name'];
+          } else {
+            echo 'Not Login';
+          }
+          ?>
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="index.php">Back Home</a>
+          <form action="code.php" method="post">
+            <button type='submit' name='logoutbtn' class='dropdown-item'>Logout</button>
+          </form>
+        </div>
+      </div>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 <!--HEADER ENDS-->
+
 

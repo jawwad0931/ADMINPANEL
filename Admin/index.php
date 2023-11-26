@@ -6,7 +6,7 @@ include('includes/sidebar.php');
 include('Authentication.php');
 include('includes/topbar.php');
 ?>
-<div class="content-wrapper">
+<div class="content-wrapper" style="height: auto;">
   <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">

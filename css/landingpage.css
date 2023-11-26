@@ -49,9 +49,9 @@ body{
     background-size: cover;
     background-position: center;
 }
-.homeintro{
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/home.jpg);
-}
+/* #home{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/justicelawbg.jpg);
+} */
 .homeintro h1{
     text-align: center;
     position: relative;

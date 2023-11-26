@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 22, 2023 at 12:03 AM
+-- Generation Time: Nov 23, 2023 at 08:32 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,8 +40,8 @@ CREATE TABLE `appointlawyer` (
 --
 
 INSERT INTO `appointlawyer` (`Id`, `FullName`, `Serivce`, `AppointDate`, `status`) VALUES
-(1, 'hakem', 'advocate', '2023-11-14', 1),
-(2, 'muhammad', 'Family', '2023-11-08', 0),
+(1, 'hakem', 'advocate', '2023-11-14', 0),
+(2, 'muhammad', 'Family', '2023-11-08', 1),
 (3, 'Malik khan', 'Advocate', '2023-11-14', 0);
 
 -- --------------------------------------------------------
@@ -63,7 +63,8 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`Id`, `Image`, `Servicetype`, `LawyerDesc`, `fees`) VALUES
-(33, 'code-g32ca37dbd_1920.jpg', 'Family', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 20000);
+(33, 'code-g32ca37dbd_1920.jpg', 'Family', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 20000),
+(34, 'copy img.jpg', 'Criminal Law', 'i am Criminal lawyer i am fro karachi ', 40000);
 
 -- --------------------------------------------------------
 
@@ -83,7 +84,6 @@ CREATE TABLE `updateimage` (
 --
 
 INSERT INTO `updateimage` (`Id`, `Name`, `Desc`, `image`) VALUES
-(15, 'jawwad khan', 'divorce', '60710918_105310480712211_6235924989145513984_n.jpg'),
 (16, 'khan', 'divorce', 'WIN_20220219_10_10_08_Pro.jpg'),
 (17, 'Mehul', 'jawwad khan is the good lawyer at all time he fight biggest cases ', '../img/2023-05-10 (3).png');
 
@@ -108,7 +108,13 @@ CREATE TABLE `user-table` (
 --
 
 INSERT INTO `user-table` (`Id`, `Name`, `Email`, `Phone`, `Password`, `role_as`, `Created at`) VALUES
-(10, 'jawwad', 'jawwadkhan@gmail.com', 340002880, '123', 1, NULL);
+(10, 'jawwad', 'jawwadkhan@gmail.com', 340002880, '123', 1, NULL),
+(11, 'malik', 'malik@gmail.com', 68536532, '123', 1, NULL),
+(12, 'khan', 'jawwad@gmail.com', 2147483647, '123', 0, NULL),
+(13, 'khan', 'ab@gmail.com', 21474836, '123', 0, NULL),
+(14, 'Jk', 'Jk@gmail.com', 21474836, '123', 0, NULL),
+(15, '', '', 0, '', 0, NULL),
+(16, 'jawwad', 'abc@gmail.com', 99999923, '123', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -130,7 +136,9 @@ CREATE TABLE `user-table2` (
 
 INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
 (5, 'khan', 'ab@gmail.com', 2147483647, ''),
-(6, 'jawwad', 'jawwad@gmail.com', 2147483647, 'fsdafsdfsd');
+(6, 'jawwad', 'jawwad@gmail.com', 2147483647, 'fsdafsdfsd'),
+(7, 'jawwad', 'jawwad@gmail.com', 2147483647, 'what is lawyer'),
+(8, 'jawwad', 'ab@gmail.com', 2147483647, 'what is the meaning of lawyer');
 
 --
 -- Indexes for dumped tables
@@ -180,7 +188,7 @@ ALTER TABLE `appointlawyer`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT for table `updateimage`
@@ -192,13 +200,13 @@ ALTER TABLE `updateimage`
 -- AUTO_INCREMENT for table `user-table`
 --
 ALTER TABLE `user-table`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `user-table2`
 --
 ALTER TABLE `user-table2`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

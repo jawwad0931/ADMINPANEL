@@ -1,0 +1,10 @@
+.banner_btn{
+    width: 100%;
+    text-align: center;
+}
+#Reg_Section{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+}

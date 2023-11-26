@@ -10,10 +10,11 @@
             </div>
             <div class="col-lg-4 col-md-4">
                 <h5 class="text-white mb-4">Quick Links</h5>
-                <a class="btn btn-link text-white-50 text-decoration-none" href="about.html">About Us</a>
-                <a class="btn btn-link text-white-50 text-decoration-none" href="contact.html">Contact Us</a>
-                <a class="btn btn-link text-white-50 text-decoration-none" href="Team.html">Our Team</a>
-                <a class="btn btn-link text-white-50 text-decoration-none" href="ter&con.html">Terms & Condition</a>
+                <a class="btn btn-link text-white-50 text-decoration-none" href="About.php">About Us</a>
+                <a class="btn btn-link text-white-50 text-decoration-none" href="Contact.php">Contact Us</a>
+                <a class="btn btn-link text-white-50 text-decoration-none" href="Services.php">Our Services</a>
+                <a class="btn btn-link text-white-50 text-decoration-none" href="hire.php">Appointment</a>
+                <a class="btn btn-link text-white-50 text-decoration-none" href="Term&cond.php">Term & Condition</a>
             </div>
             <div class="col-lg-4 col-md-4">
                 <h5 class="text-white mb-4 me-2">Contact</h5>

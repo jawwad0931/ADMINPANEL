@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Register.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/frontfooter.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/landingpage.css">
-    <link rel="icon" href="./img/favicon.jpg">
+    <link rel="icon" href="./img/justiceLogo.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
       <!--Footer Icon Font Stylesheet -->
@@ -22,5 +23,5 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Ionicons for footer -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <title>Haki</title>
+    <title>Justice Law Firm</title>
 </head>

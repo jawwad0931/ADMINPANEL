@@ -1,71 +1,114 @@
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
-include("FrontendInclude/frontTopbar.php");
+
+
 ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<body>
-
-    <!--HOME STARTS HERE-->
-    <section id="home" class="homeintro">
-        <h1><a href="#about"><img src="./img/logo-nav.png" width="200" height="200" alt="logo" class="logo"></a></h1>
-    </section>
-    <!--LANDINGPAGE ENDS HERE-->
-    <!--Team section starts here-->
-    <section class="lawyer my-5" id="lawyer">
-        <div class="container">
-            <h2 class="text-center"> Meet our Lawyers </h2>
-            <div class="row">
-                <div class="container">
-                    <div class="row">
-                        <?php
-                        $sltImage = "SELECT * FROM `updateimage`";
-                        $result = mysqli_query($conn, $sltImage);
-                        if (!$result) {
-                            die(mysqli_error($conn));
-                        } else {
-                            while ($fetch = mysqli_fetch_assoc($result)) {
-                                echo '<div class="col-sm-6 col-md-3 d-flex flex-wrap">
-                        <div class="card card-block">
-                            <a>
-                                <img src="img/' . $fetch["image"] . '" width="100" class="card-img-top" alt="Placeholder Image">
-                                <div class="card-title-wrap">
-                                    <span class="card-title"> ' . $fetch["Name"] . ' </span>
-                                    <p class="card-text fs-6"> ' . $fetch["Desc"] . ' </p>
-                                </div>
-                                <div class="lawyer-over">
-                                    <h4 class="hidden-md-down fs-3"> Connect This Lawyer </h4>
-                                    <nav class="social-nav">
-                                        <a href="www.twitter.com">
-                                            <i class="bi bi-twitter"></i>
-                                        </a>
-                                        <a href="www.facebook.com">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                        <a href="www.linkedin.com">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </nav>
-                                </div>
-                            </a>
+<body class=''>
+  <section id="Reg_Section"
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover; height: 715px;">
+    <div class="container">
+      <div class="row" style="height: 100%;display: flex;align-items: center;">
+        <div class="col-12">
+          <h1 class="text-center text-light">Welcome to Lawyer Website</h1>
+          <div id="Pcontent" class="d-flex justify-content-center">
+            <p class="text-center text-light" id="banner_Content_p">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Delectus rerum, unde, sapiente quam blanditiis doloribus fugiat expedita reiciendis perferendis,
+              architecto ut esse dicta! Veniam nobis exercitationem, ab quos dolorum ipsa impedit. Culpa, hic.
+              Repellendus, dolorem? Est quae hic quis! Itaque neque expedita excepturi ipsum quod cumque illum iure
+              eaque fugit.</p>
+          </div>
+          <div class="banner_btn">
+            <!--Register Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Registered Here
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form Action='RegisterCode.php' method='POST'>
+                    <span class="">
+                      <h3 class="text-dark mt-2 fw-light">User Registration</h3>
+                    </span>
+                    <hr class="text-dark">
+                    <div class="modal-body">
+                      <div class="form-group mt-3">
+                        <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name"
+                          required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email"
+                          required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="tel" class="form-control" id="phone" name="Phone"
+                          placeholder="Enter your phone number" required>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="form-group mt-3">
+                            <input type="password" class="form-control" name="Password" id="password"
+                              placeholder="Enter your password" required>
+                          </div>
                         </div>
-                    </div>';
-                            }
-                        }
-                        ?>
+                        <div class="col-sm-6">
+                          <div class="form-group mt-3">
+                            <input type="password" class="form-control" name="Confirm-Password" id="password"
+                              placeholder="Enter your password" required>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-secondary" name='AddUser'>Register</button>
+                  </form>
                 </div>
-
+              </div>
             </div>
+          </div>
+          <div class="banner_btn">
+            <!--Login Button trigger modal -->
+            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#login-modal">
+              Login Here
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="login-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <form class="m-5" action='ModalLoginCode.php' method='POST'>
+                    <span class="">
+                      <h3 class="text-dark mt-2 fw-light">User Login</h3>
+                    </span>
+                    <hr class="text-dark">
+                    <div class="modal-body">
+                      <div class="form-group mt-3">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email"
+                          required>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="password" class="form-control" name="password" id="password"
+                          placeholder="Enter your password" required>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="submit" class="btn btn-secondary" name='Login'>Login</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <?php include("FrontendInclude/frontFooter.php") ?>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-    <style>
-        @media (max-width: 992px) {
-            .card {
-                width: 100%;
-                /* Set the card width to 100% for small and medium screens */
-            }
-        }
-    </style>
+</html>
