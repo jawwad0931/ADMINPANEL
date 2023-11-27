@@ -43,7 +43,7 @@ include('includes/topbar.php');
           <!-- Modal -->
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
-            Add User
+            Update Lawyers
           </button>
           <!-- Modal Form Content Here -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"

@@ -23,5 +23,7 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!-- Ionicons for footer -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- owl carousel lib -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <title>Justice Law Firm</title>
 </head>

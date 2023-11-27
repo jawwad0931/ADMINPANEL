@@ -34,7 +34,7 @@ include('includes/topbar.php');
           <div class="small-box bg-info">
             <div class="inner p-4">
               <h4>Registration</h4>
-              <p>User Registration Here</p>
+              <p>User Registration Details</p>
             </div>
             <div class="icon">
               <i class="ion ion-person-add"></i>
@@ -47,13 +47,13 @@ include('includes/topbar.php');
           <!-- small box -->
           <div class="small-box bg-success">
             <div class="inner p-4">
-              <h4>Hirings</h4>
-              <p>Lawyers Details</p>
+              <h4>User Queries</h4>
+              <p>User Problems Details</p>
             </div>
             <div class="icon">
               <i class="ion-ios-people"></i>
             </div>
-            <a href="#" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="userquest.php" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->
@@ -61,13 +61,13 @@ include('includes/topbar.php');
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner p-4">
-              <h4>Payment</h4>
-              <p>Payment details</p>
+              <h4>Update Lawyers</h4>
+              <p>Update New Lawyer</p>
             </div>
             <div class="icon">
-              <i class="ion-cash"></i>
+              <i class="ion-edit"></i>
             </div>
-            <a href="#" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="UpdateLawyer.php" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

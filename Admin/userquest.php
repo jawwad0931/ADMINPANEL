@@ -38,7 +38,7 @@ include('includes/topbar.php');
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
-                <th>Question</th>
+                <th>User Query</th>
                 <th>Action</th>
               </tr>
             </thead>

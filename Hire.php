@@ -1,7 +1,4 @@
 <?php
-session_start();
-?>
-<?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
 include("FrontendInclude/frontTopbar.php");

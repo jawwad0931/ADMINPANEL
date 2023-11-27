@@ -19,6 +19,8 @@ include("FrontendInclude/frontTopbar.php");
     <section class="lawyer my-5" id="lawyer">
         <div class="container">
             <h2 class="text-center">Meet our Lawyers</h2>
+            <br>
+            <hr>
             <div class="row">
                 <div class="container">
                     <div class="row">

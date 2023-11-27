@@ -37,15 +37,15 @@ include('includes/topbar.php');
     <div class="card bg-light">
       <div class="row m-3">
         <div class="col-6">
-          <h4>Register User</h4>
+          <h4>Registered Users</h4>
         </div>
-        <div class="col-6  d-flex justify-content-end">
-          <!-- Modal -->
-          <!-- Button trigger modal -->
+        <!-- <div class="col-6  d-flex justify-content-end">
+          Modal
+          Button trigger modal
           <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
             Add User
           </button>
-          <!-- Modal Form Content Here -->
+           Modal Form Content Here 
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
             aria-hidden="true">
             <div class="modal-dialog">
@@ -91,7 +91,7 @@ include('includes/topbar.php');
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

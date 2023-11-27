@@ -70,9 +70,10 @@ include('includes/topbar.php');
                       <td>";                     
                       // Generate link based on the value of $course['status']
                       if ($row['status'] == "1") {
-                          echo "<a href='deactivate.php?deactivateId=" . $row['Id'] . "' class='btn btn-danger'>Pending</a>";
+                          echo "<a href='deactivate.php?deactivateId=" . $row['Id'] . "' class='btn btn-danger btn-sm'>Unpaid</a>";
+                         
                       } else {
-                          echo "<a href='activate.php?activateId=" . $row['Id'] . "' class='btn btn-success'>Complete</a>";
+                          echo "<a href='activate.php?activateId=" . $row['Id'] . "' class='btn btn-success btn-sm'>Paid</a>";
                       }
                       echo "</td>                     
                     </tr>";
