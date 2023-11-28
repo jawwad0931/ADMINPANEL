@@ -40,7 +40,7 @@ include("FrontendInclude/frontTopbar.php");
                 <option value="Commercial Law">Commercial Law</option>
                 <option value="Criminal Law">Criminal Law</option>
               </select>
-              <label for="day" class="w-100 text-left">Appointment</label>
+              <label for="day" class="w-100 text-left mt-4">Appointment</label>
               <input id="get-date" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
                 required>
             <div class="w-100">
@@ -67,9 +67,80 @@ include("FrontendInclude/frontTopbar.php");
   </div>
 </div>
 </div>
-
-
-
+<br>
+<hr>
+<div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-8">
+          <div class="card p-3">
+          <form action="paymentCode.php" method="POST" class="form-group">
+          <h2 class="payment-title">Payment</h2>
+          <hr>
+                <label for="name" class="float-end">Full Name</label><br>
+                <input type="text" name="Full_Name" class="form-control"><br>
+                <label for="email" class="float-end">Email</label><br>
+                <input type="text" name="Email" class="form-control"><br>
+                <label for="LawyerName" class="float-end">Lawyer Name</label><br>
+                <input type="text" name="Lawyer_Name" class="form-control"><br>
+                <label for="city" class="float-end">City</label><br>
+                <select name="cities" name="City" class="form-control">
+                  <option value=""></option>
+                  <option value="city">Karachi</option>
+                  <option value="city">Lahore</option>
+                  <option value="city">Islamabad</option>
+                  <option value="city">Faisalabad</option>
+                  <option value="city">Multan</option>
+                  <option value="city">Quetta</option>
+                  <option value="city">Peshawar</option>
+                  <option value="city">Sahiwal</option>
+                  <option value="city">Murree</option>
+                </select><br>
+                <label for="mode" class="float-end">Mode of Payment</label><br>
+                <select name="modepay" name="PaymentMode" class="form-control">
+                  <option value=""></option>
+                  <option value="Cash">Cash</option>
+                  <option value="Cash">Card</option>
+                  <option value="Cash">Easy Paisa</option>
+                  <option value="Cash">Jazz Cash</option>
+                </select><br>
+                <button class="btn btn-danger float-start" type="submit" name="PaymentSubmit">Confirm Payment</button>
+              </form>
+          </div>
+        </div>
+        </div>
+      </div>
   </section>
+  <!-- Price Start -->
+  <!-- <section class="price text-center m-0 p-3  bg-dark">
+      <div class="container m-3">
+        <h2 class="payment-title">Payment</h2>
+        <div class="row d-flex justify-content-center">
+          <div class="col-8">
+          <form action="" name="payment" class="form-group">
+                <label for="name" class="float-end">Full Name</label><br>
+                <input type="text" class="form-control"><br>
+                <label for="email" class="float-end">Email</label><br>
+                <input type="text" class="form-control"><br>
+                <label for="mode" class="float-end">Mode of Payment</label><br>
+                <select name="modeofpayment" class="form-control">
+                  <option value=""></option>
+                  <option value="Cash">Cash</option>
+                  <option value="Cash">Card</option>
+                  <option value="Cash">M-Pesa</option>
+                </select><br>
+                <button class="btn btn-danger float-start">Confirm Payment</button>
+              </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- Price End -->
     </div>
-<?php include("FrontendInclude/frontFooter.php") ?>
+<?php 
+    include("FrontendInclude/frontFooter.php");
+?>
+<br>
+<?php
+    include("FrontendInclude/backbutton.php");
+
+?>

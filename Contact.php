@@ -93,5 +93,8 @@ include("FrontendInclude/frontTopbar.php");
         </div>
         <!-- Contact End -->
 
-<?php include("FrontendInclude/frontFooter.php")?>
+<?php 
+    include("FrontendInclude/frontFooter.php");
+    include("FrontendInclude/backbutton.php");
+?>
         

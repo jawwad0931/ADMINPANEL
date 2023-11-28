@@ -46,60 +46,42 @@
     </section>
 
     <!-- What our client say -->
-    <section>
-        <div class="container-xxl py-5">
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5>
-            <div class="container">
-                <h1 class="text-center mb-5">Our Clients Say!!!</h1>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>"Thanks to Job Prep, I aced my interview with confidence! The expert tips and real-world simulations were a game-changer. Highly recommend!"</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid  rounded" src="img/men1.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Shane martin</h5>
-                                <small>Web Designer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>"Job Prep turned my job hunt around. The comprehensive resources and user-friendly interface made learning enjoyable. Thrilled with the results!"</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid  rounded" src="img/women.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Lorain Martinez</h5>
-                                <small>Frontend Developer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>"I can't believe how much Job Prep helped me shine in interviews. It's like having a personal career coach anytime, anywhere. Grateful for this platform!"</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid  rounded" src="img/testimonial-3.jpg"
-                                style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Evans</h5>
-                                <small>Backend Developer</small>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Flickity HTML init -->
+    <div class="container">
+        <h1 class='fs-1 fw-light text-center m-3'>What our Clients Say</h1>
+        <hr>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="carousel" style='height:350px; width:600px;' 
+                data-flickity='{ "wrapAround": true ,"autoPlay": true  }'>
+                <div class="carousel-cell" style='height:100%; width:100%'>
+                    <img src="img/appoint.jpg" alt="" height='100%' width='100%'>
                 </div>
-            </div>
+                <div class="carousel-cell">
+                <img src="img/appoint.jpg" alt="" height='100%' width='100%'>
+                </div>
+                <div class="carousel-cell">
+                <img src="img/appoint.jpg" alt="" height='100%' width='100%'>
+                </div>
+                <div class="carousel-cell">
+                <img src="img/appoint.jpg" alt="" height='100%' width='100%'>
+                </div>
+                <div class="carousel-cell">
+                <img src="img/appoint.jpg" alt="" height='100%' width='100%'>
+                </div>
+            </div>               
         </div>
-        <!-- Testimonial End -->
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-dark btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-        </div>
-    </section>
-    <!--about ends here-->
+    </div>
+</div>
+<!-- Back to Top button content -->
+<!-- Back to Top button content end-->
 
-<?php include("FrontendInclude/frontFooter.php") ?>
+<!--about ends here-->
+
+<?php 
+    include("FrontendInclude/frontFooter.php");
+    include("FrontendInclude/backbutton.php");
+?>
 
 
 <style>

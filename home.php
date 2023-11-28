@@ -65,7 +65,10 @@ include("FrontendInclude/frontTopbar.php");
             </div>
         </div>
     </section>
-    <?php include("FrontendInclude/frontFooter.php") ?>
+    <?php 
+    include("FrontendInclude/frontFooter.php");
+    include("FrontendInclude/backbutton.php");
+    ?>
 
     <style>
         @media (max-width: 992px) {
