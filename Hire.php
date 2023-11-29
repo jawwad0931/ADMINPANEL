@@ -29,9 +29,9 @@ include("FrontendInclude/frontTopbar.php");
           <div class="card">
             <div class="card-body">
               <label for="names" class="names w-100 text-left" id="">Full Name</label>
-              <input type="text" value="" name="full_name" class="name form-control" id="fullname"><br>
+              <input type="text" value="" name="full_name" class="name form-control" id="fullname" required><br>
               <label for="service" class="services w-100 text-left" id="services">Serivce</label>
-              <select name="service" id="service" class="form-control w-100 text-left">
+              <select name="service" id="service" class="form-control w-100 text-left" required>
                 <option value=""></option>
                 <option value="Divorce">Divorce</option>
                 <option value="Family">Family</option>
@@ -75,15 +75,18 @@ include("FrontendInclude/frontTopbar.php");
           <div class="card p-3">
           <form action="paymentCode.php" method="POST" class="form-group">
           <h2 class="payment-title">Payment</h2>
+          <div class="icon">
+              <i class="ion-cash fs-2"></i>
+            </div>
           <hr>
                 <label for="name" class="float-end">Full Name</label><br>
-                <input type="text" name="Full_Name" class="form-control"><br>
+                <input type="text" name="Full_Name" class="form-control" required><br>
                 <label for="email" class="float-end">Email</label><br>
-                <input type="text" name="Email" class="form-control"><br>
+                <input type="text" name="Email" class="form-control" required><br>
                 <label for="LawyerName" class="float-end">Lawyer Name</label><br>
-                <input type="text" name="Lawyer_Name" class="form-control"><br>
+                <input type="text" name="Lawyer_Name" class="form-control" required><br>
                 <label for="city" class="float-end">City</label><br>
-                <select name="cities" name="City" class="form-control">
+                <select  name="City" class="form-control" required>
                   <option value=""></option>
                   <option value="city">Karachi</option>
                   <option value="city">Lahore</option>
@@ -96,51 +99,22 @@ include("FrontendInclude/frontTopbar.php");
                   <option value="city">Murree</option>
                 </select><br>
                 <label for="mode" class="float-end">Mode of Payment</label><br>
-                <select name="modepay" name="PaymentMode" class="form-control">
+                <select  name="PaymentMode" class="form-control" required>
                   <option value=""></option>
                   <option value="Cash">Cash</option>
                   <option value="Cash">Card</option>
                   <option value="Cash">Easy Paisa</option>
                   <option value="Cash">Jazz Cash</option>
                 </select><br>
-                <button class="btn btn-danger float-start" type="submit" name="PaymentSubmit">Confirm Payment</button>
+                <button type="submit" class="btn btn-danger float-start"  name="PaymentSubmit">Confirm Payment</button>
               </form>
           </div>
         </div>
         </div>
       </div>
   </section>
-  <!-- Price Start -->
-  <!-- <section class="price text-center m-0 p-3  bg-dark">
-      <div class="container m-3">
-        <h2 class="payment-title">Payment</h2>
-        <div class="row d-flex justify-content-center">
-          <div class="col-8">
-          <form action="" name="payment" class="form-group">
-                <label for="name" class="float-end">Full Name</label><br>
-                <input type="text" class="form-control"><br>
-                <label for="email" class="float-end">Email</label><br>
-                <input type="text" class="form-control"><br>
-                <label for="mode" class="float-end">Mode of Payment</label><br>
-                <select name="modeofpayment" class="form-control">
-                  <option value=""></option>
-                  <option value="Cash">Cash</option>
-                  <option value="Cash">Card</option>
-                  <option value="Cash">M-Pesa</option>
-                </select><br>
-                <button class="btn btn-danger float-start">Confirm Payment</button>
-              </form>
-          </div>
-        </div>
-      </div>
-    </section> -->
-<!-- Price End -->
     </div>
 <?php 
     include("FrontendInclude/frontFooter.php");
-?>
-<br>
-<?php
     include("FrontendInclude/backbutton.php");
-
 ?>

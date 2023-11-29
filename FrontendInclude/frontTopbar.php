@@ -5,7 +5,7 @@ include("FrontendInclude/frontHeader.php");
 ?>
 <!--HEADER STARTS-->
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+  <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -34,26 +34,25 @@ include("FrontendInclude/frontHeader.php");
           <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>
         </li>
         <li>
-          <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+          <div class="dropdown dropdown-left">
+            <button class="btn btn-md btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?php
                 if (isset($_SESSION['auth'])) {
                   echo $_SESSION['auth_user']['name'];
-                  // var_dump($_SESSION);
                 } else {
                   echo 'Not Login';
                 }
-                ?>
+              ?>
             </button>
             <ul class="dropdown-menu">
               <form action="RegisterCode.php" method="post">
-              <button type='submit' name='logoutbtn' class='dropdown-item'>Logout</button>
+                <button type='submit' name='logoutbtn' class='dropdown-item'>Logout</button>
               </form>
               <li><a class="dropdown-item" href="#">Back Home</a></li>
             </ul>
           </div>
         </li>
+
       </ul>
     </div>
   </div>

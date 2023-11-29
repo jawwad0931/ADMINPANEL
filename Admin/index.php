@@ -61,13 +61,13 @@ include('includes/topbar.php');
           <!-- small box -->
           <div class="small-box bg-warning">
             <div class="inner p-4">
-              <h4>Update Lawyers</h4>
-              <p>Update New Lawyer</p>
+              <h4>Users Payments</h4>
+              <p>Users Payment Details</p>
             </div>
             <div class="icon">
-              <i class="ion-edit"></i>
+              <i class="ion-cash"></i>
             </div>
-            <a href="UpdateLawyer.php" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
+            <a href="usersPayment.php" class="small-box-footer">Click <i class="fas fa-arrow-circle-right"></i></a>
           </div>
         </div>
         <!-- ./col -->

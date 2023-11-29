@@ -43,7 +43,7 @@ include('includes/topbar.php');
                     <!-- Modal -->
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
-                        Add User
+                        Add New Service
                     </button>
                     <!-- Modal Form Content Here -->
                     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -128,8 +128,8 @@ include('includes/topbar.php');
                                             <td>$LawyerDesc</td>
                                             <td>$fees</td>
                                             <td>
-                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-outline-primary'>Edit</a>
-                                                <a href='servicedelete.php?servicedltid=$Id' class='btn btn-outline-danger'>Delete</a>
+                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-outline-primary m-2'>Edit</a>
+                                                <a href='servicedelete.php?servicedltid=$Id' class='btn btn-outline-danger m-2'>Delete</a>
                                             </td>
                                         </tr>";
                                     }

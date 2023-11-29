@@ -39,64 +39,11 @@ include('includes/topbar.php');
         <div class="col-6">
           <h4>Registered Users</h4>
         </div>
-        <!-- <div class="col-6  d-flex justify-content-end">
-          Modal
-          Button trigger modal
-          <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#exampleModal">
-            Add User
-          </button>
-           Modal Form Content Here 
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <form Action='code.php' method='POST'>
-                  <div class="modal-body">
-                    <div class="form-group">
-                      <label for="name">Name</label>
-                      <input type="text" class="form-control" id="name" name="Name" placeholder="Enter your name"
-                        required>
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email" name="Email" placeholder="Enter your email"
-                        required>
-                    </div>
-                    <div class="form-group">
-                      <label for="phone">Phone Number</label>
-                      <input type="tel" class="form-control" id="phone" name="Phone"
-                        placeholder="Enter your phone number" required>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="password">Password</label>
-                          <input type="password" class="form-control" name="Password" id="password"
-                            placeholder="Enter your password" required>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="form-group">
-                          <label for="password">Confirm Password</label>
-                          <input type="password" class="form-control" name="Confirm-Password" id="password"
-                            placeholder="Enter your password" required>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-secondary" name='AddUser'>Submit</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
   <!-- Table -->
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-12">
         <!-- /Table -->

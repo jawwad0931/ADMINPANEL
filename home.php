@@ -8,7 +8,7 @@ include("FrontendInclude/frontTopbar.php");
 <body>
 
     <!--HOME STARTS HERE-->
-    <section id="home" class="homeintro" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center; height: 500px;">
+    <section id="home" class="homeintro d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center; height: 500px;">
         <div class="text-center">
         <h1>Justice Law Firm heading goes here</h1>
         <p>Justice Law Firm paragraph goes here</p>

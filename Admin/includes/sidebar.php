@@ -62,6 +62,11 @@
             <p>User Question</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="usersPayment.php" class="nav-link">
+            <p>Users Payments</p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
