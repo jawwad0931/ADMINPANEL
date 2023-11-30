@@ -10,6 +10,7 @@ include("FrontendInclude/frontTopbar.php");
     style="background-image:url('img/cont.jpg');background-size:cover;height:500px;">
     <div class="container my-5 pt-5 pb-4">
         <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
+        <i class="fa fa-star"></i>
     </div>
 </div>
 <!-- Header End -->

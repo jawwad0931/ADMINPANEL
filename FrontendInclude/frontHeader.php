@@ -23,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Flickity CDN -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
     <!-- Ionicons for footer -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <title>Justice Law Firm</title>
