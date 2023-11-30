@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 29, 2023 at 08:22 PM
+-- Generation Time: Dec 01, 2023 at 12:10 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -66,7 +66,10 @@ CREATE TABLE `payment` (
 
 INSERT INTO `payment` (`Id`, `Full_Name`, `Email`, `Lawyer_Name`, `City`, `PaymentMode`, `Payment_status`) VALUES
 (4, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 1),
-(5, '', '', ' ', '', '', 1);
+(5, '', '', ' ', '', '', 1),
+(6, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 0),
+(7, 'ali', 'ab@gmail.com', ' Nawaz', 'city', 'Cash', 0),
+(8, 'ali', 'ab@gmail.com', ' Nawaz', 'city', 'Cash', 0);
 
 -- --------------------------------------------------------
 
@@ -225,7 +228,7 @@ ALTER TABLE `appointlawyer`
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `services`
