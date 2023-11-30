@@ -71,7 +71,7 @@ include("FrontendInclude/frontTopbar.php");
 <hr>
 <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-8">
+          <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="card p-3">
           <form action="paymentCode.php" method="POST" class="form-group">
           <h2 class="payment-title">Payment</h2>
@@ -115,6 +115,6 @@ include("FrontendInclude/frontTopbar.php");
   </section>
     </div>
 <?php 
-    include("FrontendInclude/frontFooter.php");
     include("FrontendInclude/backbutton.php");
+    include("FrontendInclude/frontFooter.php");
 ?>

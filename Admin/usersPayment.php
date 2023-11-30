@@ -8,7 +8,7 @@ include('includes/topbar.php');
 ?>
 
 <!-- Content Wrapper -->
-<div class="content-wrapper">
+<div class="content-wrapper" style="height:;">
     <!-- Content Header -->
     <div class="content-header">
         <div class="container-fluid">
@@ -74,9 +74,9 @@ include('includes/topbar.php');
                                             <td>";
                                         // Generate a link based on the value of $row['Payment_status']
                                         if ($row['Payment_status'] == "1") {
-                                            echo "<a href='paymentdeactivate.php?PaydeactivateId=" . $row['Id'] . "' class='btn btn-danger btn-sm'>Unpaid</a>";
+                                            echo "<a href='paymentdeactivate.php?PaydeactivateId=" . $row['Id'] . "' class='btn btn-sm glow-btn-2'>Unpaid</a>";
                                         } else {
-                                            echo "<a href='paymentactivate.php?PayactivateId=" . $row['Id'] . "' class='btn btn-success btn-sm'>Paid</a>";
+                                            echo "<a href='paymentactivate.php?PayactivateId=" . $row['Id'] . "' class='btn btn-sm glow-btn'>Paid</a>";
                                         }
                                         echo "</td> 
                                         <td scope='row'>
@@ -101,4 +101,6 @@ include('includes/topbar.php');
     </div>
 </div>
 </div>
-<?php include('includes/footer.php'); ?>
+
+<?php include('includes/footer.php'); 
+?>

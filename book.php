@@ -1,44 +1,60 @@
-<?php 
-    include("FrontendInclude/frontHeader.php");
-    include("FrontendInclude/frontTopbar.php");
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow Light Green Border and Shadow Button</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
 
-<!-- Header  -->
-  <div id="appointment" class="container-flex">
-    <div class=" container-fluid text-center  header-book">
-      <h1>Book Your Appointment Today</h1>
-      <p class="lead"></p>
-    </div>
-</div>
-<!-- Price Start -->
-    <section class="price text-center">
-      <div class="container">
-        <h2 class="payment-title">Payment</h2>
-        <div class="card card-pay">
-          <h3>Pay for your Consultation</h3>
-          <div class="card-body-pay">
-            <i class="bi-payment bi-cash"></i><br>
-            <button name="pay" class="pay" id="pay" onclick="click">Pay</button>
-              <form action="" name="payment" class="payment form-group" id="payment">
-                <label for="name" class="paymentname" id="paymentName">Full Name</label><br>
-                <input type="text" class="pname form-control" id="pname"><br>
-                <label for="email" class="email" id="email">Email</label><br>
-                <input type="text" class="emailaddress form-control" id="emailaddress"><br>
-                <label for="mode">Mode of Payment</label><br>
-                <select name="modeofpayment" id="modeOfPayment" class="modepayment form-control">
-                  <option value=""></option>
-                  <option value="Cash">Cash</option>
-                  <option value="Cash">Card</option>
-                  <option value="Cash">M-Pesa</option>
-                </select><br>
-                <button class="paymentconfirm" id="paymentconfirm" onclick="click">Confirm Payment</button>
-              </form>
-          </div>
-        </div> 
-      </div>
-    </section>
-<!-- Price End -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../js/script.js"></script>
+    .glow-btn {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 10px;
+      color: #fff;
+      background-color: #8cc84b; /* Light Green Background Color */
+      border: 2px solid #8cc84b; /* Light Green Border Color */
+      border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      box-shadow: 0 0 10px rgba(140, 200, 75, 0); /* Initial box shadow with no glow */
+      transition: box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+    }
 
-  <?php include("FrontendInclude/frontFooter.php") ?>
+    .glow-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      background-color: #8cc84b; /* Light Green Color */
+      border-radius: 5px;
+      opacity: 0;
+      transition: width 0.10s ease-out, height 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .glow-btn:hover::before {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+
+    .glow-btn:hover {
+      background-color: #8cc84b; /* Change background color on hover */
+      box-shadow: 0 0 20px rgba(140, 200, 75, 0.5); /* Add a subtle glowing box shadow on hover */
+    }
+  </style>
+</head>
+<body>
+  <button class="glow-btn">Click me</button>
+</body>
+</html>

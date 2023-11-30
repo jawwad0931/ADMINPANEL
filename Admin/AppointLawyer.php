@@ -7,7 +7,7 @@ include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
 <!-- Content Wrapper -->
-<div class="content-wrapper">
+<div class="content-wrapper" style="height: auto;">
    <!-- Content Header -->
    <div class="content-header">
     <div class="container-fluid">

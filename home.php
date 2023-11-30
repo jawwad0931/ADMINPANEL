@@ -65,9 +65,22 @@ include("FrontendInclude/frontTopbar.php");
             </div>
         </div>
     </section>
+    <section class="bg-dark">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-center">
+                    <div class="icon">
+                    <i class="ion-quote text-light pr-5"></i>
+                    <h1 class="text-light">Famous Lawyer Quotes is here</h1>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
     <?php 
-    include("FrontendInclude/frontFooter.php");
     include("FrontendInclude/backbutton.php");
+    include("FrontendInclude/frontFooter.php");
     ?>
 
     <style>

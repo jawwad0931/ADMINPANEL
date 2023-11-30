@@ -57,6 +57,6 @@ include("FrontendInclude/frontTopbar.php");
         <!-- term&condition -->
 
 <?php 
-    include("FrontendInclude/frontFooter.php");
     include("FrontendInclude/backbutton.php");
+    include("FrontendInclude/frontFooter.php");
 ?>
