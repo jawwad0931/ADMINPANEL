@@ -1,10 +1,13 @@
+<!-- registered user code update here -->
 <?php
+// include file is here
 include('Config/db.php');
 include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+
+<!-- Registered code update here -->
 <div class="content-wrapper">
     <!-- Content Header -->
     <div class="content-header">
@@ -50,22 +53,22 @@ include('includes/topbar.php');
 
     <!-- Update data in input field -->
     <?php
-    if(isset($_GET['Idupd'])){
-    error_reporting(0);
-    $id = $_GET['Idupd'];
-    $name = $_POST['Name'];
-    $email = $_POST['Email'];
-    $phone = $_POST['Phone'];
-    $upd = "UPDATE `user-table` SET `Name`='$name', `Email`='$email', `Phone`='$phone' WHERE Id = $id";
-    $sql = mysqli_query($conn, $upd);
-    if ($sql) {
-        echo "<script>
+    if (isset($_GET['Idupd'])) {
+        error_reporting(0);
+        $id = $_GET['Idupd'];
+        $name = $_POST['Name'];
+        $email = $_POST['Email'];
+        $phone = $_POST['Phone'];
+        $upd = "UPDATE `user-table` SET `Name`='$name', `Email`='$email', `Phone`='$phone' WHERE Id = $id";
+        $sql = mysqli_query($conn, $upd);
+        if ($sql) {
+            echo "<script>
         alert('Data successfully updated');
         window.location.href = 'Register.php';
         </script>";
-    } else {
-        echo "<script>alert('Error Found!!!')</script>";
-    }    
+        } else {
+            echo "<script>alert('Error Found!!!')</script>";
+        }
     }
     ?>
     <!-- Update form -->
@@ -103,4 +106,7 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
-    <?php include('includes/footer.php'); ?>
+</div>
+
+<!-- footer file -->
+<?php include('includes/footer.php'); ?>

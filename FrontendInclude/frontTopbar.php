@@ -1,3 +1,4 @@
+<!-- ye topbar ka content hai -->
 <?php
 session_start();
 include('Frontenddb/db.php');
@@ -21,6 +22,7 @@ include("FrontendInclude/frontHeader.php");
         <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
         </li>
+        <!-- ye pending hai -->
         <!-- <li class="nav-item">
           <a class="nav-link text-dark active" aria-current="page" href="#">Team</a>
         </li> -->

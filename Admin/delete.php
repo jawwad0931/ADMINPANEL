@@ -1,15 +1,14 @@
+<!-- User registration code delete here -->
 <?php
-include ('Config/db.php');
-
-if(isset($_GET['deleteid'])){
+// includes file are here
+include('Config/db.php');
+if (isset($_GET['deleteid'])) {
     $dlt = $_GET['deleteid'];
     $dltquery = "DELETE FROM `user-table` WHERE Id = $dlt";
-    $query = mysqli_query($conn,$dltquery);
-    if($query){
+    $query = mysqli_query($conn, $dltquery);
+    if ($query) {
         header("location: Register.php");
     }
 }
-
 mysqli_close($conn);
-
 ?>

@@ -1,4 +1,6 @@
+<!-- Appointment Page where admin view all the appointment which insert to frontend hire page -->
 <?php
+// These all file define in include directory and call here 
 session_start();
 include('Authentication.php');
 include('Config/db.php');
@@ -6,10 +8,10 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+<!-- Appoint Lawyer data fetch here  -->
 <div class="content-wrapper" style="height: auto;">
-   <!-- Content Header -->
-   <div class="content-header">
+  <!-- Content Header -->
+  <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
@@ -42,53 +44,51 @@ include('includes/topbar.php');
                 <th>toggle</th>
               </tr>
             </thead>
-            <tbody>
-              <!-- Fetch all the data from database -->
-              <?php
-              include("Config/db.php");
-              if ($conn) {
-                $Lawyerslt = "SELECT * FROM `appointlawyer`";
-                ;
-                $Run_detailsql = mysqli_query($conn, $Lawyerslt);
-
-                // Check if any rows were returned
-                if (mysqli_num_rows($Run_detailsql) > 0) {
-                  // Fetch data and output rows in the table
-                  while ($row = mysqli_fetch_assoc($Run_detailsql)) {
-                    echo "<tr>
-                      <td scope='row'> " . $row['Id'] . "</td>
-                      <td scope='row'> " . $row['FullName'] . "</td>
-                      <td scope='row'> " . $row['Serivce'] . "</td> 
-                      <td scope='row'> " . $row['AppointDate'] . "</td> 
-                      <td>";
+              <tbody>
+                <!-- Fetch all the data from database appointlawyer Table -->
+                <?php
+                include("Config/db.php");
+                if ($conn) {
+                  $Lawyerslt = "SELECT * FROM `appointlawyer`";
+                  ;
+                  $Run_detailsql = mysqli_query($conn, $Lawyerslt);
+                  // Check if any rows were returned
+                  if (mysqli_num_rows($Run_detailsql) > 0) {
+                    // Fetch data and output rows in the table
+                    while ($row = mysqli_fetch_assoc($Run_detailsql)) {
+                      echo "<tr>
+                        <td scope='row'> " . $row['Id'] . "</td>
+                        <td scope='row'> " . $row['FullName'] . "</td>
+                        <td scope='row'> " . $row['Serivce'] . "</td> 
+                        <td scope='row'> " . $row['AppointDate'] . "</td> 
+                        <td>";
                       if ($row['status'] == "1") {
-                          echo 'pending';
+                        echo 'pending';
                       } else {
-                          echo 'complete';
+                        echo 'complete';
                       }
                       echo "</td>
-                      <td>";                     
+                        <td>";
                       // Generate link based on the value of $course['status']
                       if ($row['status'] == "1") {
-                          echo "<a href='deactivate.php?deactivateId=" . $row['Id'] . "' class='btn btn-danger btn-sm'>Imcomplete</a>";
-                         
+                        echo "<a href='deactivate.php?deactivateId=" . $row['Id'] . "' class='btn btn-danger btn-sm'>Imcomplete</a>";
+
                       } else {
-                          echo "<a href='activate.php?activateId=" . $row['Id'] . "' class='btn btn-success btn-sm'>Complete</a>";
+                        echo "<a href='activate.php?activateId=" . $row['Id'] . "' class='btn btn-success btn-sm'>Complete</a>";
                       }
                       echo "</td>                     
-                    </tr>";
+                      </tr>";
+                    }
+                    echo '</tbody>
+                      </table>';
+                  } else {
+                    echo "No records found";
                   }
-                  echo '</tbody>
-                    </table>';
-                } else {
-                  echo "No records found";
+                  // Close the connection
+                  $conn->close();
                 }
-
-                // Close the connection
-                $conn->close();
-              }
-              ?>
-            <tbody>
+                ?>
+              <tbody>
           </table>
         </div>
       </div>
@@ -96,4 +96,5 @@ include('includes/topbar.php');
   </div>
 </div>
 </div>
+<!-- Footer Define Here -->
 <?php include('includes/footer.php'); ?>

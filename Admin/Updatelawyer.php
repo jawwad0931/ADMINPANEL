@@ -1,4 +1,6 @@
+<!-- our lawyer walay code ko yahan retrieve kiya ja raha hai yani fetch kiya ja raha hai -->
 <?php
+// include ki files yaha hai
 session_start();
 include('Authentication.php');
 include('Config/db.php');
@@ -6,7 +8,7 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+<!-- our lawyer ko yahan code mai fetch kiya gaya hai -->
 <div class="content-wrapper" style="height: auto;">
   <!-- Content Header -->
   <div class="content-header">
@@ -52,7 +54,7 @@ include('includes/topbar.php');
               <div class="modal-content">
                 <form Action='imagecode.php' method='POST' enctype="multipart/form-data">
                   <div class="modal-body">
-                  <div class="form-group">
+                    <div class="form-group">
                       <label for="Lawyer Name">Lawyer Name</label>
                       <input type="text" class="form-control" id="Lawyer Name" name="Name" required>
                     </div>
@@ -114,8 +116,8 @@ include('includes/topbar.php');
                             </td>
                             </tr>";
                   }
-                }else{
-                    echo "Query Doesnot run";
+                } else {
+                  echo "Query Doesnot run";
                 }
               }
               ?>
@@ -127,5 +129,6 @@ include('includes/topbar.php');
   </div>
 </div>
 </div>
-<?php include('includes/footer.php'); ?>
 
+<!-- footer ki file -->
+<?php include('includes/footer.php'); ?>

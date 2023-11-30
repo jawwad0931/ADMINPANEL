@@ -6,10 +6,10 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+<!-- contact us wala data yahan fetch ho raha hai -->
 <div class="content-wrapper" style="height: auto;">
-   <!-- Content Header -->
-   <div class="content-header">
+  <!-- Content Header -->
+  <div class="content-header">
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
@@ -48,23 +48,9 @@ include('includes/topbar.php');
               include("Config/db.php");
               if ($conn) {
                 $questslt = "SELECT * FROM `user-table2`";
-                ;
                 $Run_quest = mysqli_query($conn, $questslt);
-
-                // Check if any rows were returned
                 if (mysqli_num_rows($Run_quest) > 0) {
-                  // Fetch data and output rows in the table
                   while ($row = mysqli_fetch_assoc($Run_quest)) {
-                    // echo "<tr>
-                    //     <td scope='row'> ' . $row['Id'] . '</td>
-                    //     <td scope='row'> ' . $row['Name'] . '</td>
-                    //     <td scope='row'> ' . $row['Email'] . '</td> 
-                    //     <td scope='row'> ' . $row['Phone'] . '</td>
-                    //     <td scope='row'> ' . $row['Question'] . '</td> 
-                    //     <td scope='row'>
-                    //     <a href='questDelete.php?questdltId=$Id' class='btn btn-outline-danger'>Delete</a>
-                    //     </td> 
-                    //     </tr>";
                     echo "<tr>
                       <td scope='row'> " . $row['Id'] . "</td>
                       <td scope='row'> " . $row['Name'] . "</td>
@@ -77,13 +63,11 @@ include('includes/topbar.php');
                     </tr>";
 
                   }
-
                   echo '</tbody>
                     </table>';
                 } else {
                   echo "No records found";
                 }
-
                 // Close the connection
                 $conn->close();
               }
@@ -96,4 +80,6 @@ include('includes/topbar.php');
   </div>
 </div>
 </div>
+
+<!-- footer wala file -->
 <?php include('includes/footer.php'); ?>

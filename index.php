@@ -1,13 +1,12 @@
+<!-- index page hai yahan user login aur register karega -->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <body class=''>
+  <!-- index Page code start -->
   <section id="Reg_Section"
     style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover; height: 715px;">
     <div class="container">
@@ -21,6 +20,7 @@ include("FrontendInclude/frontHeader.php");
               Repellendus, dolorem? Est quae hic quis! Itaque neque expedita excepturi ipsum quod cumque illum iure
               eaque fugit.</p>
           </div>
+          <!-- yahan modal define hai register ke liya -->
           <div class="banner_btn">
             <!--Register Button trigger modal -->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -71,6 +71,7 @@ include("FrontendInclude/frontHeader.php");
               </div>
             </div>
           </div>
+          <!-- yahan modal define hai login ke liya -->
           <div class="banner_btn">
             <!--Login Button trigger modal -->
             <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#login-modal">
@@ -107,8 +108,8 @@ include("FrontendInclude/frontHeader.php");
       </div>
     </div>
   </section>
+  <!-- register page code end here -->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
 </html>

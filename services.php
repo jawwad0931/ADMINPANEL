@@ -1,3 +1,4 @@
+<!-- services wala page hai -->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
@@ -111,7 +112,7 @@ include("FrontendInclude/frontTopbar.php");
   </div>
 </div>
 <!-- End Services With Images -->
-<!-- BEGINNING OF SERVICE PAGE BODY -->
+<!-- Services page start -->
 <div class="container-flex">
   <!-- CONTAINER CLASS WITH SERVICE CARDS -->
   <?php
@@ -145,7 +146,10 @@ include("FrontendInclude/frontTopbar.php");
   ?>
   <!-- END OF SERVICE CARDS CONTAINER -->
 </div>
+<!-- Services page end -->
 <!-- END OF SERVICE PAGE BODY -->
+
+<!-- footer ka code -->
 <?php 
     include("FrontendInclude/backbutton.php");
     include("FrontendInclude/frontFooter.php");

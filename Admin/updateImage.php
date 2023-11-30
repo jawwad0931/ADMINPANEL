@@ -1,10 +1,11 @@
+<!-- Frontend our lawyer wala code yahan se change kiya ja raha hai -->
 <?php
 include('Config/db.php');
 include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+<!-- Our lawyer ko update kiya ja raha hai -->
 <div class="content-wrapper">
     <!-- Content Header -->
     <div class="content-header">
@@ -32,7 +33,9 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
-    <!-- View Data in input field-->
+
+
+    <!----------------------------- View Data in input field---------------------------------------->
     <?php
     if (isset($_GET['updImgId'])) {
         $id = $_GET['updImgId'];
@@ -49,8 +52,8 @@ include('includes/topbar.php');
     }
 
 
-    
-    // Update data in input field
+
+    //------------------------------- Update data in input field--------------------------------------
     if (isset($_GET['ImgIdupd'])) {
         error_reporting(0);
         $id = $_GET['ImgIdupd'];
@@ -96,8 +99,7 @@ include('includes/topbar.php');
         }
     }
     ?>
-
-    
+    <!-- -----------------------------------our lawyer ko yahan update kiya ja raha hai---------------------- -->
     <!-- Update form -->
     <div class="container">
         <div class="row">
@@ -108,7 +110,8 @@ include('includes/topbar.php');
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <form action="updateImage.php?ImgIdupd=<?php echo $id ?>" method='POST' enctype='multipart/form-data'>
+                        <form action="updateImage.php?ImgIdupd=<?php echo $id ?>" method='POST'
+                            enctype='multipart/form-data'>
                             <div class="form-group">
                                 <label for="Lawyer Name">Lawyer Name</label>
                                 <input type="text" class="form-control" id="Lawyer Name" name="Name" placeholder=""
@@ -133,4 +136,6 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
-    <?php include('includes/footer.php'); ?>
+</div>
+<!-- yeh footer ki file hai -->
+<?php include('includes/footer.php'); ?>

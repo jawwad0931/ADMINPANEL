@@ -1,4 +1,6 @@
+<!-- service update code here we can easily update services for frontend -->
 <?php
+// Include code is here
 session_start();
 include('Config/db.php');
 include('Authentication.php');
@@ -6,7 +8,7 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-<!-- Content Wrapper -->
+<!-- Services Update code -->
 <div class="content-wrapper" style="height: auto;">
     <!-- Content Header -->
     <div class="content-header">
@@ -136,8 +138,6 @@ include('includes/topbar.php');
                                 }
                             }
                             ?>
-
-
                         <tbody>
                     </table>
                 </div>
@@ -146,4 +146,5 @@ include('includes/topbar.php');
     </div>
 </div>
 </div>
+<!-- footer code is here -->
 <?php include('includes/footer.php'); ?>

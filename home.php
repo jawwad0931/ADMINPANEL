@@ -1,3 +1,4 @@
+<!-- Home page ka code yahan hai -->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
@@ -6,16 +7,17 @@ include("FrontendInclude/frontTopbar.php");
 ?>
 
 <body>
-
     <!--HOME STARTS HERE-->
-    <section id="home" class="homeintro d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center; height: 500px;">
+    <section id="home" class="homeintro d-flex align-items-center justify-content-center"
+        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center; height: 500px;">
         <div class="text-center">
-        <h1>Justice Law Firm heading goes here</h1>
-        <p>Justice Law Firm paragraph goes here</p>
+            <h1>Justice Law Firm heading goes here</h1>
+            <p>Justice Law Firm paragraph goes here</p>
         </div>
     </section>
     <!--LANDINGPAGE ENDS HERE-->
-    <!--Team section starts here-->
+
+    <!--Home page start-->
     <section class="lawyer my-5" id="lawyer">
         <div class="container">
             <h2 class="text-center">Meet our Lawyers</h2>
@@ -70,19 +72,19 @@ include("FrontendInclude/frontTopbar.php");
             <div class="row">
                 <div class="col-lg-12 d-flex justify-content-center">
                     <div class="icon">
-                    <i class="ion-quote text-light pr-5"></i>
-                    <h1 class="text-light">Famous Lawyer Quotes is here</h1>
+                        <i class="ion-quote text-light pr-5"></i>
+                        <h1 class="text-light">Famous Lawyer Quotes is here</h1>
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
-    <?php 
+    <!-- Home page end -->
+
+    <?php
     include("FrontendInclude/backbutton.php");
     include("FrontendInclude/frontFooter.php");
     ?>
-
     <style>
         @media (max-width: 992px) {
             .card {

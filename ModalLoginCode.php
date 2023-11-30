@@ -1,13 +1,14 @@
+<!-- index page walay login aur register ka code hai -->
 <?php
 session_start();
-include ('Frontenddb/db.php');
-if(isset($_POST['Login'])) {
+include('Frontenddb/db.php');
+if (isset($_POST['Login'])) {
     $Email = $_POST['email'];
     $Password = $_POST['password'];
     $savesql = "SELECT * FROM `user-table` WHERE Email='$Email' AND Password='$Password' LIMIT 1";
     $sqlRun = mysqli_query($conn, $savesql);
-    if(mysqli_num_rows($sqlRun) > 0) {
-        foreach($sqlRun as $row){
+    if (mysqli_num_rows($sqlRun) > 0) {
+        foreach ($sqlRun as $row) {
             $id = $row['Id'];
             $name = $row['Name'];
             $email = $row['Email'];
@@ -16,14 +17,13 @@ if(isset($_POST['Login'])) {
         }
         $_SESSION['auth'] = "$role_as";
         $_SESSION['auth_user'] = [
-            'id'=>$id,
-            'name'=>$name,
-            'email'=>$email,
-            'phone'=>$phone
+            'id' => $id,
+            'name' => $name,
+            'email' => $email,
+            'phone' => $phone
         ];
         header("Location: home.php");
-    } 
-    else {
+    } else {
         header("Location: index.php");
         echo "<script>alert('Access Denied Something went wrong');</script>";
     }

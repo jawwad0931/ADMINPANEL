@@ -1,4 +1,6 @@
+<!-- user registration record fetch here -->
 <?php
+// icludes files here
 session_start();
 include('Config/db.php');
 include('includes/header.php');
@@ -90,4 +92,5 @@ include('includes/topbar.php');
   </div>
 </div>
 </div>
+<!-- Footer include file -->
 <?php include('includes/footer.php'); ?>

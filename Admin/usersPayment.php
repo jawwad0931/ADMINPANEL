@@ -1,3 +1,4 @@
+<!-- user payment ka data yahan se retrieve ho raha hai -->
 <?php
 session_start();
 include('Authentication.php');
@@ -7,7 +8,7 @@ include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
 
-<!-- Content Wrapper -->
+<!-- user payment ka detail yahan se dekhan ja raha hai -->
 <div class="content-wrapper" style="height:;">
     <!-- Content Header -->
     <div class="content-header">
@@ -24,7 +25,6 @@ include('includes/topbar.php');
             </div>
         </div>
     </div>
-
     <!-- Table -->
     <div class="container">
         <div class="row">
@@ -102,5 +102,6 @@ include('includes/topbar.php');
 </div>
 </div>
 
-<?php include('includes/footer.php'); 
+<!-- footer ki file ye hai -->
+<?php include('includes/footer.php');
 ?>

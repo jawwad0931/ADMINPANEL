@@ -1,4 +1,6 @@
+<!-- this is index.php page for admin here define some div boxes-->
 <?php
+// includes files here
 session_start();
 include('Config/db.php');
 include('includes/header.php');
@@ -91,11 +93,8 @@ include('includes/topbar.php');
       <!-- /.row (main row) -->
     </div><!-- /.container-fluid -->
   </section>
-  </div>
-  <?php
-    include('includes/footer.php');
-    ?>
 </div>
-<!-- /.row -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<?php include('includes/footer.php'); ?>
+</div>
+<!-- Boostrap version 5 code use for main purposes -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
