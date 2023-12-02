@@ -40,12 +40,19 @@ include("FrontendInclude/frontTopbar.php");
                   <option value="Labor Law">Labor Law</option>
                   <option value="Commercial Law">Commercial Law</option>
                   <option value="Criminal Law">Criminal Law</option>
+                  <option value="Environmental Law">Environmental Law</option>
+                  <option value="Cyber Criminal">Cyber Criminal</option>
+                  <option value="Bankrupty">Bankrupty</option>
+                  <option value="Bussiness Law">Bussiness Law</option>
+                  <option value="Imigration">Imigration</option>
+                  <option value="Litigation">Litigation</option>
+
                 </select>
                 <label for="day" class="w-100 text-left mt-4">Appointment</label>
-                <input id="get-date" type="date" name="AppointDate" onclick="hire()" class="form-control" placeholder="Enter Date"
+                <input id="get-date" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
                   required>
                 <div class="w-100">
-                  <input type="submit" class="btn btn-primary mt-3 float-start" value="Submit" onclick="hiring()" name="Appoint_Save">
+                  <input type="submit" class="btn btn-primary mt-3 float-start" onclick="hire()" value="Submit" onclick="hiring()" name="Appoint_Save">
                 </div>
               </div>
             </div>
@@ -77,17 +84,17 @@ include("FrontendInclude/frontTopbar.php");
             <form action="paymentCode.php" method="POST" class="form-group">
               <h2 class="payment-title">Payment</h2>
               <div class="icon">
-                <i class="ion-cash fs-2"></i>
+                <i class="ion-cash fs-2 text-success"></i>
               </div>
               <hr>
               <label for="name" class="float-end">Full Name</label><br>
-              <input type="text" name="Full_Name" class="form-control" required><br>
+              <input type="text" name="Full_Name" class="form-control" id="full_name" required><br>
               <label for="email" class="float-end">Email</label><br>
-              <input type="text" name="Email" class="form-control" required><br>
+              <input type="text" name="Email" id="email" class="form-control" required><br>
               <label for="LawyerName" class="float-end">Lawyer Name</label><br>
-              <input type="text" name="Lawyer_Name" class="form-control" required><br>
+              <input type="text" name="Lawyer_Name" id="lawyer_name" class="form-control" required><br>
               <label for="city" class="float-end">City</label><br>
-              <select name="City" class="form-control" required>
+              <select name="City" id="city" class="form-control" required>
                 <option value=""></option>
                 <option value="city">Karachi</option>
                 <option value="city">Lahore</option>
@@ -99,15 +106,21 @@ include("FrontendInclude/frontTopbar.php");
                 <option value="city">Sahiwal</option>
                 <option value="city">Murree</option>
               </select><br>
-              <label for="mode" class="float-end">Mode of Payment</label><br>
-              <select name="PaymentMode" class="form-control" required>
+              <label for="mode" class="float-end">Mode of Payment</label>
+              <div class="float-start mx-3 mb-1">
+                <img src="img/easy.png" height="25px" width="25px">
+                <img src="img/jazz.png" height="25px" width="25px">
+                <img src="img/mastercard.png" height="25px" width="25px">
+                <img src="img/cash.png" height="25px" width="25px">
+              </div><br>
+              <select name="PaymentMode" id="paymentMode" class="form-control" required>
                 <option value=""></option>
                 <option value="Cash">Cash</option>
-                <option value="Cash">Card</option>
-                <option value="Cash">Easy Paisa</option>
-                <option value="Cash">Jazz Cash</option>
+                <option value="Master Card">Master Card</option>
+                <option value="Easy paisa">Easy Paisa</option>
+                <option value="Jazz Cash">Jazz Cash</option>
               </select><br>
-              <button type="submit" class="btn btn-danger float-start" name="PaymentSubmit">Confirm Payment</button>
+              <button type="submit" class="btn btn-danger float-start" onclick="Confirm()" name="PaymentSubmit">Confirm Payment</button>
             </form>
           </div>
         </div>

@@ -50,7 +50,7 @@ include("FrontendInclude/frontHeader.php");
               <form action="RegisterCode.php" method="post">
                 <button type='submit' name='logoutbtn' class='dropdown-item'>Logout</button>
               </form>
-              <li><a class="dropdown-item" href="#">Back Home</a></li>
+              <li><a class="dropdown-item" href="home.php">Back Home</a></li>
             </ul>
           </div>
         </li>
