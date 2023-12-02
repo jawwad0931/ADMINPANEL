@@ -42,10 +42,10 @@ include("FrontendInclude/frontTopbar.php");
                   <option value="Criminal Law">Criminal Law</option>
                 </select>
                 <label for="day" class="w-100 text-left mt-4">Appointment</label>
-                <input id="get-date" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
+                <input id="get-date" type="date" name="AppointDate" onclick="hire()" class="form-control" placeholder="Enter Date"
                   required>
                 <div class="w-100">
-                  <input type="submit" class="btn btn-primary mt-3 float-start" value="Submit" name="Appoint_Save">
+                  <input type="submit" class="btn btn-primary mt-3 float-start" value="Submit" onclick="hiring()" name="Appoint_Save">
                 </div>
               </div>
             </div>

@@ -51,19 +51,22 @@ include("FrontendInclude/frontTopbar.php");
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 wow fadeInUp">
+            <div class="col-md-6">
+            <div class="embed-responsive embed-responsive-16by9">
                 <iframe
+                    class="embed-responsive-item"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.842895042729!2d67.03111787495672!3d24.8350457462749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dc59d94aae5%3A0xd52c8da8236bbcf3!2sGlass%20Tower!5e0!3m2!1sen!2s!4v1692656072364!5m2!1sen!2s"
-                    width="570" height="470" style="border:0;" allowfullscreen="" loading="lazy"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </div>
             <div class="col-md-6">
                 <div class="wow fadeInUp">
                     <h3 class="pb-2">Fill Your Message</h3>
                     <p class="mb-4">Contact Us for any query and then we are able to help you about Lawyer.
                         </a></p>
                     <form action="contactcode.php" method="POST" class="row g-3 needs-validation" style="width: 100%;"
-                        novalidate>
+                        >
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -95,8 +98,7 @@ include("FrontendInclude/frontTopbar.php");
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" name="Submit_Message">Send Message</button>
-                                <div class="feedback-message"></div>
+                                <button class="btn btn-primary w-100 py-3" onclick="contact()" name="Submit_Message">Send Message</button>
                             </div>
                         </div>
                     </form>

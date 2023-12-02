@@ -8,8 +8,7 @@ include("FrontendInclude/frontTopbar.php");
 
 <body>
     <!--HOME STARTS HERE-->
-    <section id="home" class="homeintro d-flex align-items-center justify-content-center"
-        style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center; height: 500px;">
+    <section id="home" class="homeintro d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center;">
         <div class="text-center">
             <h1>Justice Law Firm heading goes here</h1>
             <a href="Hire.php" class="btn btn-outline-light">Book Your Consultation</a>
@@ -149,7 +148,7 @@ include("FrontendInclude/frontTopbar.php");
     <div class="row"></div>
     <div class="row d-flex justify-content-center">
         <div class="col-lg-8 col-md-8 col-sm-12">
-            <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": true }' style="height:200px;">        
+            <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": true }' style="height:220px;">        
                 <div class="carousel-cell" style="height: 100%; width:300px;">
                     <div id="CardImg">
                         <img src="img/logo11.svg" alt="">

@@ -76,8 +76,8 @@ include('includes/topbar.php');
                             <td>$email</td>
                             <td>$phone </td>
                             <td>
-                            <a href='update.php?updId=$id' class='btn btn-outline-success'>Edit</a>
-                            <a href='delete.php?deleteid=$id' class='btn btn-outline-danger'>Delete</a>
+                            <a href='update.php?updId=$id' class='btn btn-outline-success m-1'>Edit</a>
+                            <a href='delete.php?deleteid=$id' class='btn btn-outline-danger m-1'>Delete</a>
                             </td>
                             </tr>";
                   }

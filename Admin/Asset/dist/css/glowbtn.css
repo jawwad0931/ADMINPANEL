@@ -1,8 +1,6 @@
 
 /* for paid button */
 .glow-btn {
-    height: 30px;
-    width: 60%;
     display: inline-block;
     font-size: 15px;
     color: #fff;
@@ -44,8 +42,6 @@
 
 /* for unpaids button */
   .glow-btn-2 {
-    height: 30px;
-    width: 60%;
     display: inline-block;
     font-size: 15px;
     color: #fff;

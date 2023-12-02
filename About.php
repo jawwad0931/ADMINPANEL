@@ -19,14 +19,13 @@ include("FrontendInclude/frontTopbar.php");
             <div class="row">
                 <div class="col-lg-6 col-sm-12 col-md-12">
                     <div class="column left container">
-                        <img src="./img/home.jpg" alt="about-img" class="about-img">
+                        <img src="./img/home.jpg" alt="about-img" class="about-img" width='400px' height='300px'>
                     </div>
                 </div>
                 <div class="col-lg-6 col-sm-12 col-md-12">
-                    <div class="column right">
+                    <div class="column_right">
                         <div class="text">We are a SaaS <span>Company</span></div>
-                        <p> We are a company that links you as a potential client to the best lawyers in the
-                            country.<br>
+                        <p> We are a company that links you as a potential client to the best lawyers in the country
                             Enabling you to book an appointment at the convinience of your home. </p>
                         <a href="Hire.php" class='btn btn-dark'>Services</a>
                     </div>
@@ -34,6 +33,7 @@ include("FrontendInclude/frontTopbar.php");
             </div>
         </div>
     </div>
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-12 mt-5">
@@ -57,7 +57,7 @@ include("FrontendInclude/frontTopbar.php");
             </div>
         </div>
     </div>
-</section>
+
 
 <!-- What our client say -->
 <!-- Flickity HTML init -->
@@ -95,4 +95,15 @@ include("FrontendInclude/frontFooter.php");
     .page-header {
         background-image: url('img/criminal.jpeg');
     }
+    
+    @media screen and (max-width: 1000px) {
+    .about-img {
+        width: 100%;
+    }
+    .column_right{
+        text-align: center;
+        margin: 10px;
+    }
+    }
+
 </style>

@@ -21,13 +21,12 @@ body { font-family: sans-serif; }
   justify-content: center;
 }
 
-.carousel-cell.is-selected {
-  /* background: #ED2; */
-}
+
 
 #content{
   height: 100%;
 }
+
 
 
 

@@ -2,6 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Name -->
   <a href="#" class="brand-link">
+    <span><img src="../img/justiceLogo.png" alt="" height="35px" width="35px" class='img-fluid rounded-circle'></span>
     <span class="brand-text font-weight-light">Admin Panel</span>
   </a>
   <!-- Sidebar -->
@@ -32,7 +33,6 @@
             <p class="">Dashboard</p>
           </a>
         </li>
-        <li class="nav-header">Setting</li>
         <li class="nav-item">
           <a href="index.php" class="nav-link">
             <p class="text">Admin Panel</p>
@@ -60,7 +60,7 @@
         </li>
         <li class="nav-item">
           <a href="userquest.php" class="nav-link">
-            <p>User Question</p>
+            <p>User Queries</p>
           </a>
         </li>
         <li class="nav-item">
