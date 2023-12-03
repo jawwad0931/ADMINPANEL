@@ -53,7 +53,6 @@ function contact() {
 }
 
 // booking alert message
-// userQueries alert message 
 function hire() {
     let fullname = document.getElementById('fullname').value;
     let services = document.getElementById('services').value;
@@ -68,4 +67,6 @@ function hire() {
         alert("Please fill Booking form");
     }
 }
+
+
 

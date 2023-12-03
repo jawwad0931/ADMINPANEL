@@ -138,3 +138,17 @@ include("FrontendInclude/frontTopbar.php");
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");
 ?>
+
+
+<style>
+  @keyframes glowing {
+    0% { box-shadow: 0 0 5px #ff0000; }
+    50% { box-shadow: 0 0 10px #ff0000; }
+    100% { box-shadow: 0 0 5px #ff0000; }
+}
+
+.glowbtn {
+    animation: glowing 2s infinite;
+}
+
+</style>

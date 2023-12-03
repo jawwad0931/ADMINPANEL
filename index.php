@@ -13,13 +13,10 @@ include("FrontendInclude/frontHeader.php");
       <div class="row d-flex justify-content-center" style="height:595px;">
         <div class="col-12 d-flex align-items-center justify-content-center">
           <div class="col-lg-6 col-md-12 col-sm-12">
-          <h1 class="text-center text-light">Welcome to Lawyer Website</h1>
+          <h1 class="text-center text-light">Welcome to <br> Justice Law Firm Website</h1>
+          <hr class="text-light">
           <div id="Pcontent" class="">
-            <p class="text-center text-light" id="banner_Content_p">Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Delectus rerum, unde, sapiente quam blanditiis doloribus fugiat expedita reiciendis perferendis,
-              architecto ut esse dicta! Veniam nobis exercitationem, ab quos dolorum ipsa impedit. Culpa, hic.
-              Repellendus, dolorem? Est quae hic quis! Itaque neque expedita excepturi ipsum quod cumque illum iure
-              eaque fugit.</p>
+            <p class="text-center text-light" id="banner_Content_p">At Justice Law Firm, we stand at the intersection of justice and advocacy. Our dedicated team of legal professionals is committed to delivering exceptional results tailored to your unique needs. Trust us to be your champions in the pursuit of fairness and resolution. Welcome to a place where your legal concerns find expert solutions.</p>
           </div>
           <!-- yahan modal define hai register ke liya -->
           <div class="banner_btn">
@@ -66,7 +63,12 @@ include("FrontendInclude/frontHeader.php");
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="submit" class="btn btn-secondary" name='AddUser'>Register</button>
+                      <button type="submit" class="btn btn-secondary" onclick="register()" name='AddUser'>Register</button>
+                      <script>
+                        function register(){
+                          alert('User Registered Successfully\nLogin To Access Dashboard');
+                        }
+                      </script>
                   </form>
                 </div>
               </div>

@@ -4,7 +4,7 @@
   <div class="container-fluid">
     <div class="row g-5 d-flex justify-content-center">
       <div class="col-lg-4 col-md-4">
-        <h5 class="text-white mb-4">Lawyer Quotes</h5>
+      <h5 class="text-white mb-3">---Justice Law Firm---</h5>
         <p style="width:280px">"Trusted legal expertise for a secure tomorrow. Our seasoned team of lawyers is dedicated
           to providing personalized solutions and unwavering advocacy. Your peace of mind is our priority."</p>
       </div>

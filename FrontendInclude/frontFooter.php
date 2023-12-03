@@ -88,7 +88,7 @@
     <div class="container-fluid">
         <div class="row g-5 d-flex justify-content-center">
             <div class="col-lg-4 col-md-4">
-                <h5 class="text-white mb-3">Lawyer Quotes</h5>
+                <h5 class="text-white mb-3">---Justice Law Firm---</h5>
                 <p style="width:350px">"Trusted legal expertise for a secure tomorrow. Our seasoned team of lawyers is
                     dedicated to providing personalized solutions and unwavering advocacy. Your peace of mind is our
                     priority."</p>
@@ -143,6 +143,7 @@
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
 <!-- Flickity JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+<script src="js/flickity.pkgd.min.js"></script>
 </body>
 </html>

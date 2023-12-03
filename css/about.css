@@ -13,7 +13,7 @@ body { font-family: sans-serif; }
   width: 28%;
   height: 100%;
   margin-right: 10px;
-  background:black;
+  background:rgb(255, 247, 247);
   border-radius: 5px;
   counter-increment: carousel-cell;
   display: flex;
