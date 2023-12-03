@@ -6,7 +6,7 @@ include("FrontendInclude/frontTopbar.php");
 ?>
 <!-- Header Start -->
 <div class="container-fluid py-5  mb-5"
-  style="background-image:url('img/appoint.jpg');background-size:cover;height:500px;">
+  style="background-image:url('img/appoint.jpg');background-size:cover;height:600px;">
   <div class="container my-5 pt-5 pb-4">
     <h1 class="display-3 text-white mb-3 animated slideInDown">Appointment</h1>
   </div>
@@ -82,9 +82,13 @@ include("FrontendInclude/frontTopbar.php");
         <div class="col-lg-8 col-md-12 col-sm-12">
           <div class="card p-3">
             <form action="paymentCode.php" method="POST" class="form-group">
-              <h2 class="payment-title">Payment</h2>
-              <div class="icon">
-                <i class="ion-cash fs-2 text-success"></i>
+              <h3 class="payment">------------Payments------------</h3>
+              <div class="paymentsImg p-4">
+              <img src="img/easy.png" height="30px" width="30px">
+                <img src="img/jazz.png" height="30px" width="30px">
+                <img src="img/mastercard.png" height="30px" width="30px">
+                <img src="img/cash.png" height="30px" width="30px">
+                <img src="img/visa.png" height="30px" width="30px">
               </div>
               <hr>
               <label for="name" class="float-end">Full Name</label><br>
@@ -134,3 +138,19 @@ include("FrontendInclude/frontTopbar.php");
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");
 ?>
+
+<style>
+  .icon-container {
+  display: inline-block;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 128, 0, 1);
+  }
+}
+</style>

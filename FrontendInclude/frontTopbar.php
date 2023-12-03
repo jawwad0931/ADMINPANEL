@@ -5,7 +5,7 @@ include('Frontenddb/db.php');
 include("FrontendInclude/frontHeader.php");
 ?>
 <!--HEADER STARTS-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg fixed-top" style="backdrop-filter: blur(10px);background-color: rgba(255, 255, 255, 0.5);">
   <div class="container">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
       aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,26 +17,26 @@ include("FrontendInclude/frontHeader.php");
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03" style="margin-right:45px;">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="home.php">Home</a>
+          <a class="nav-link text-light active" aria-current="page" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
+          <a class="nav-link text-light active" aria-current="page" href="About.php">About</a>
         </li>
         <!-- ye pending hai -->
         <!-- <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="#">Team</a>
+          <a class="nav-link text-light active" aria-current="page" href="#">Team</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="services.php">Services</a>
+          <a class="nav-link text-light active" aria-current="page" href="services.php">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="Contact.php">Contact</a>
+          <a class="nav-link text-light active" aria-current="page" href="Contact.php">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>
+          <a class="nav-link text-light active" aria-current="page" href="Hire.php">Appointment</a>
         </li>
         <li>
-          <div class="dropdown dropdown-left">
+          <div class="dropdown">
             <button class="btn btn-md btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?php
                 if (isset($_SESSION['auth'])) {
@@ -54,7 +54,6 @@ include("FrontendInclude/frontHeader.php");
             </ul>
           </div>
         </li>
-
       </ul>
     </div>
   </div>

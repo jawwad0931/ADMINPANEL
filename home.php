@@ -10,17 +10,16 @@ include("FrontendInclude/frontTopbar.php");
     <!--HOME STARTS HERE-->
     <section id="home" class="homeintro d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center;">
         <div class="text-center">
-            <h1>Justice Law Firm heading goes here</h1>
-            <a href="Hire.php" class="btn btn-outline-light">Book Your Consultation</a>
+            <h1 class="text-light">"Your Legal Ally – Justice Law Firm.<br /> Expertise, Dedication, Justice."</h1>
+            <a href="Hire.php" class="btn btn-outline-light mt-3">Book Your Consultation</a>
         </div>
     </section>
     <!--LANDINGPAGE ENDS HERE-->
 
     <!--Home page start-->
-    <section class="lawyer my-3" id="lawyer">
+    <section class="lawyer" id="lawyer">
         <div class="container">
-            <h2 class="text-center fw-light">Meet our Lawyers</h2>
-            <br>
+            <h2 class="text-center text-secondary fw-bold text-bold">Meet our Lawyers</h2>
             <hr>
             <div class="row">
                 <div class="container">
@@ -32,7 +31,7 @@ include("FrontendInclude/frontTopbar.php");
                             die(mysqli_error($conn));
                         } else {
                             while ($fetch = mysqli_fetch_assoc($result)) {
-                                echo '<div class="col-sm-6 col-md-3 d-flex flex-wrap">
+                                echo '<div class="col-sm-6 col-md-3 col-lg-6 d-flex flex-wrap">
                         <div class="card card-block">
                             <a>
                                 <img src="img/' . $fetch["image"] . '" width="100" class="card-img-top" alt="Placeholder Image">
@@ -42,17 +41,6 @@ include("FrontendInclude/frontTopbar.php");
                                 </div>
                                 <div class="lawyer-over">
                                     <h4 class="hidden-md-down fs-3"> Connect This Lawyer </h4>
-                                    <nav class="social-nav">
-                                        <a href="www.twitter.com">
-                                            <i class="bi bi-twitter"></i>
-                                        </a>
-                                        <a href="www.facebook.com">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                        <a href="www.linkedin.com">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </nav>
                                 </div>
                             </a>
                         </div>
@@ -68,12 +56,12 @@ include("FrontendInclude/frontTopbar.php");
     </section>
     <!-- lawyer Quote message wala yahan hai -->
     <div class="container">
-    <h1 class='fs-1 fw-light text-center m-3'>Hear from our client</h1>
+    <h3 class='fs-1 fw-bold text-center text-secondary m-3'>Testimonials</h3>
     <hr>
     <div class="row d-flex justify-content-center">
         <div class="col-lg-8 col-md-8 col-sm-12">
             <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": true }' style="height:500px; width:100%;">
-                <div class="carousel-cell bg-primary" style="height: 100%; width:415px;">
+                <div class="carousel-cell bg-dark" style="height: 100%; width:415px;">
                     <div id="homeCard">
                         <div class="text-center p-4">
                         <i class="ion-star text-center text-light fs-3"></i>
@@ -82,13 +70,11 @@ include("FrontendInclude/frontTopbar.php");
                         <i class="ion-star text-center text-light fs-3"></i>
                          <i class="ion-star text-center text-light fs-3"></i>
                         </div>
-                        <h1 class="text-light text-center">Lawyer 12</h1>
-                        <p class="text-light text-center p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.</p>
-                        <p class="text-light text-center">Jk ....</p>
+                        <h1 class="text-light text-center">Gulpreet singh</h1>
+                        <p class="text-light text-center p-4">"I was falsely implication in murder case ( Under Section 302 IPC) in 2011. I was in Judicial custody since 2012, Hon’ble ASJ rejected my bail. A firm fought my case on charge without any fee and I was acquittal and discharged of this case in 2014. I am honestly thankful of Shri Ompal Singh and this organisation."</p>
                     </div>
                 </div>
-                <div class="carousel-cell bg-primary" style="height: 100%; width:415px;">
+                <div class="carousel-cell bg-dark" style="height: 100%; width:415px;">
                     <div id="homeCard">
                         <div class="text-center p-4">
                         <i class="ion-star text-center text-light fs-3"></i>
@@ -97,12 +83,11 @@ include("FrontendInclude/frontTopbar.php");
                         <i class="ion-star text-center text-light fs-3"></i>
                          <i class="ion-star text-center text-light fs-3"></i>
                         </div>
-                        <h1 class="text-light text-center">Lawyer 12</h1>
-                        <p class="text-light text-center p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.</p>
+                        <h1 class="text-light text-center">Michael</h1>
+                        <p class="text-light text-center p-4">"I was so lucky to have a friend refer me to Justice Law Firm, and Kristina West. She was always kind, upbeat and never judgmental. Kristina walked me through each step of the divorce process, so that."</p>
                     </div>
                 </div>
-                <div class="carousel-cell bg-primary" style="height: 100%; width:415px;">
+                <div class="carousel-cell bg-dark" style="height: 100%; width:415px;">
                     <div id="homeCard">
                         <div class="text-center p-4">
                         <i class="ion-star text-center text-light fs-3"></i>
@@ -111,12 +96,11 @@ include("FrontendInclude/frontTopbar.php");
                         <i class="ion-star text-center text-light fs-3"></i>
                          <i class="ion-star text-center text-light fs-3"></i>
                         </div>
-                        <h1 class="text-light text-center">Lawyer 12</h1>
-                        <p class="text-light text-center p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.</p>
+                        <h1 class="text-light text-center">Naveen Chauhan</h1>
+                        <p class="text-light text-center p-4"> Naveen Chauhan, Advocate  Information: Cyber Crime is increasing day by day due to lack of awareness among the people as well as our judicial system and police. The technology is also developing very quickly so in most of the cases lack of cyber crime conviction is the primary result of absence of proper legal assistance to prosecute cyber crimes.</p>
                     </div>
                 </div>
-                <div class="carousel-cell bg-primary" style="height: 100%; width:415px;">
+                <div class="carousel-cell bg-dark" style="height: 100%; width:415px;">
                     <div id="homeCard">
                         <div class="text-center p-4">
                         <i class="ion-star text-center text-light fs-3"></i>
@@ -125,9 +109,8 @@ include("FrontendInclude/frontTopbar.php");
                         <i class="ion-star text-center text-light fs-3"></i>
                          <i class="ion-star text-center text-light fs-3"></i>
                         </div>
-                        <h1 class="text-light text-center">Lawyer 12</h1>
-                        <p class="text-light text-center p-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
-                            possimus.</p>
+                        <h1 class="text-light text-center">Morne Marshall</h1>
+                        <p class="text-light text-center p-4"> I entered into a domestic partnership without doing all of my homework and when the relationship ended I found myself in a difficult situation. I never imagined the person I entered into partnership with would go after my finances the way he did. I was ignorant on the laws surrounding domestic partnerships or if I had any recourse. Ms. Schoenberg helped me understand exactly where I stood on a number of issues in my case and also what I could do to ensure I landed in a good place when it was all over.</p>
                     </div>
                 </div>
             </div>

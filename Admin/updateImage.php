@@ -29,7 +29,7 @@ include('includes/topbar.php');
                 <h4>Update Image</h4>
             </div>
             <div class="col-6  d-flex justify-content-end">
-                <a href="Register.php" type="" class="btn btn-info btn-sm">Back</a>
+                <a href="updateLawyer.php" type="" class="btn btn-info btn-sm">Back</a>
             </div>
         </div>
     </div>

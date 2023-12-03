@@ -111,7 +111,7 @@
                 <a href="tel:+923085499310" class="text-white-50 Contact text-decoration-none">
                     <p class="mb-2"><i class="fa fa-phone-alt text-primary icons me-2"></i>+923085499310</p>
                 </a>
-                <a href="mailto:info@jobprep.com" class="text-white-50 Contact text-decoration-none">
+                <a href="mailto:info@lawfirm.com" class="text-white-50 Contact text-decoration-none">
                     <p class="mb-2"><i class="fa fa-envelope text-info icons me-2"></i>jawwadk638@gmail.com</p>
                 </a>
                 <div class="d-flex pt-2">

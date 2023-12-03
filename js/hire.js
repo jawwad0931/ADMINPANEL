@@ -17,11 +17,6 @@ $(document).ready(function() {
   });
 });
 
-// for booking lawyer online
-function hire(){
-    alert('Your Booking Confirm');
-}
-
 
 // for online payment
 function Confirm() {
@@ -35,7 +30,7 @@ function Confirm() {
         alert(message);
     } else {
         // Handle the case when any of the fields is empty
-        alert("Please fill in all the fields.");
+        alert("Please fill your payment details.");
     }
 }
 
@@ -53,7 +48,22 @@ function contact() {
         alert(message);
     } else {
         // Handle the case when any of the fields is empty
-        alert("Please fill in all the fields.");
+        alert("Please fill field form");
+    }
+}
+
+// booking alert message
+// userQueries alert message 
+function hire() {
+    let fullname = document.getElementById('fullname').value;
+    let service = document.getElementById('service').value;
+    let AppointDate = document.getElementById('AppointDate').value;
+
+    if (fullname && service && AppointDate) {
+        alert('Your Appointment suucessfully book');
+    } else {
+        // Handle the case when any of the fields is empty
+        alert("Please fill Booking form");
     }
 }
 

@@ -7,10 +7,9 @@ include("FrontendInclude/frontTopbar.php");
 
 <!-- Header Start -->
 <div class="container-fluid py-5  mb-5"
-    style="background-image:url('img/cont.jpg');background-size:cover;height:500px;">
+    style="background-image:url('img/Contact.jfif');background-size:cover;height:600px;background-position:center">
     <div class="container my-5 pt-5 pb-4">
         <h1 class="display-3 text-white mb-3 animated slideInDown">Contact Us</h1>
-        <i class="fa fa-star"></i>
     </div>
 </div>
 <!-- Header End -->
@@ -18,35 +17,35 @@ include("FrontendInclude/frontTopbar.php");
 <!-- Contact Start -->
 <div class="container-fluid py-5">
     <div class="container-fluid">
-        <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Contact For Any Query</h1>
+        <h1 class="text-center mb-5 text-secondary">Contact For Any Query</h1>
         <div class="row g-4">
             <div class="col-12">
                 <div class="row gy-4">
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex align-items-center bg-light rounded p-4">
+                        <div class="d-flex align-items-center bg-light rounded p-3">
                             <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
                                 style="width: 45px; height: 45px;">
-                                <i class="fa fa-map-marker-alt text-primary"></i>
+                                <i class="fa fa-map-marker-alt text-secondary"></i>
                             </div>
-                            <span>Clifton,Karachi,Pakistan</span>
+                            <span class="text-secondary">Clifton,Karachi,Pakistan</span>
                         </div>
                     </div>
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
-                        <div class="d-flex align-items-center bg-light rounded p-4">
+                        <div class="d-flex align-items-center bg-light rounded p-3">
                             <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
                                 style="width: 45px; height: 45px;">
-                                <i class="fa fa-envelope-open text-primary"></i>
+                                <i class="fa fa-envelope-open text-secondary"></i>
                             </div>
-                            <span>Jawwadk638@gamil.com</span>
+                            <span class="text-secondary">Jawwadk638@gamil.com</span>
                         </div>
                     </div>
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center bg-light rounded p-4">
+                        <div class="d-flex align-items-center bg-light rounded p-3">
                             <div class="bg-white border rounded d-flex flex-shrink-0 align-items-center justify-content-center me-3"
                                 style="width: 45px; height: 45px;">
-                                <i class="fa fa-phone-alt text-primary"></i>
+                                <i class="fa fa-phone-alt text-secondary"></i>
                             </div>
-                            <span>+9278965214</span>
+                            <span class="text-secondary">+9278965214</span>
                         </div>
                     </div>
                 </div>
@@ -62,8 +61,8 @@ include("FrontendInclude/frontTopbar.php");
         </div>
             <div class="col-md-6">
                 <div class="wow fadeInUp">
-                    <h3 class="pb-2">Fill Your Message</h3>
-                    <p class="mb-4">Contact Us for any query and then we are able to help you about Lawyer.
+                    <h3 class="pb-2 text-secondary">Fill Your Message</h3>
+                    <p class="mb-4 text-secondary">Contact Us for any query and then we are able to help you about Lawyer.
                         </a></p>
                     <form action="contactcode.php" method="POST" class="row g-3 needs-validation" style="width: 100%;"
                         >
@@ -98,7 +97,7 @@ include("FrontendInclude/frontTopbar.php");
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" onclick="contact()" name="Submit_Message">Send Message</button>
+                                <button class="btn btn-outline-primary btn-md w-100 py-2" onclick="contact()" name="Submit_Message">Send Message</button>
                             </div>
                         </div>
                     </form>

@@ -4,9 +4,9 @@ include("FrontendInclude/frontTopbar.php");
 ?>
 <!-- Header Start -->
 <div class="container-fluid py-5  mb-5"
-    style="background-image:url('img/about.jpg');background-size:cover;height:500px;">
+    style="background-image:url('img/about.jfif');background-size:cover;height:600px;background-position:center;">
     <div class="container my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3">About Us</h1>
+        <h1 class="display-3 text-white fw-light mb-3">About Us</h1>
     </div>
 </div>
 <!-- Header End -->
@@ -25,38 +25,43 @@ include("FrontendInclude/frontTopbar.php");
                 <div class="col-lg-6 col-sm-12 col-md-12">
                     <div class="column_right">
                         <div class="text">We are a SaaS <span>Company</span></div>
-                        <p> We are a company that links you as a potential client to the best lawyers in the country
-                            Enabling you to book an appointment at the convinience of your home. </p>
+                        <p>
+                            We are a dedicated legal services firm committed to connecting you with the finest lawyers
+                            nationwide. Our platform empowers you as a potential client, making it seamless to book
+                            appointments with top-tier legal professionals, all from the comfort of your home. At [Your
+                            Justice Law Firm], we prioritize convenience, ensuring that your legal needs are met with
+                            efficiency and excellence. Explore the possibilities of hassle-free legal assistance with
+                            us.</p>
                         <a href="Hire.php" class='btn btn-dark'>Services</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </section>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 mt-5">
-                <div>
-                    <h1 class="fw-light">About Justice Law Firm</h1>
-                    <h1 class="fw-light mt-5">Southlake Attorneys Offering Family Law & Estate Planning Services</h1>
-                </div>
-                <div>
-                    <p class="mt-5">Justice Law Firm has an excellent reputation and is known for providing
-                        high-quality, individualized representation and attention to clients in need of legal services.
-                        Our team of experienced attorneys can represent you in a variety of issues relating to family
-                        law, divorce, estate planning, and collaborative law.</p>
-                    <p class="mt-5">We understand that legal issues are complex and challenging, so we strive to make
-                        your experience as simple and stress-free as possible. Our attorneys can handle the legal work
-                        for you, maintaining open communication and keeping you informed along the way.</p>
-                </div>
-                <hr>
-                <h6>To get in touch with the professionals at Justice Law Firm, please contact us online or call (817)
-                    477-6756.</h6>
-                <hr>
+</section>
+<div class="container-fluid bg-light">
+    <div class="row p-5">
+        <div class="col-12 mt-5 p-5">
+            <div>
+                <h1 class="fw-light">About Justice Law Firm</h1>
+                <h1 class="fw-light mt-5">Southlake Attorneys Offering Family Law & Estate Planning Services</h1>
             </div>
+            <div>
+                <p class="mt-5">Justice Law Firm has an excellent reputation and is known for providing
+                    high-quality, individualized representation and attention to clients in need of legal services.
+                    Our team of experienced attorneys can represent you in a variety of issues relating to family
+                    law, divorce, estate planning, and collaborative law.</p>
+                <p class="mt-5">We understand that legal issues are complex and challenging, so we strive to make
+                    your experience as simple and stress-free as possible. Our attorneys can handle the legal work
+                    for you, maintaining open communication and keeping you informed along the way.</p>
+            </div>
+            <hr>
+            <h6>To get in touch with the professionals at Justice Law Firm, please contact us online or call (817)
+                477-6756.</h6>
+            <hr>
         </div>
     </div>
+</div>
 
 
 <!-- What our client say -->
@@ -95,15 +100,15 @@ include("FrontendInclude/frontFooter.php");
     .page-header {
         background-image: url('img/criminal.jpeg');
     }
-    
-    @media screen and (max-width: 1000px) {
-    .about-img {
-        width: 100%;
-    }
-    .column_right{
-        text-align: center;
-        margin: 10px;
-    }
-    }
 
+    @media screen and (max-width: 1000px) {
+        .about-img {
+            width: 100%;
+        }
+
+        .column_right {
+            text-align: center;
+            margin: 10px;
+        }
+    }
 </style>

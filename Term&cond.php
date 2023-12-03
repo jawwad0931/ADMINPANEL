@@ -8,7 +8,7 @@ include("FrontendInclude/frontTopbar.php");
 <!-- Header End -->
 <div class="container-fluid py-5  mb-5" style="background-image:url('img/tr.jpg');background-size:cover;height:500px;">
     <div class="container my-5 pt-5 pb-4">
-        <h1 class="display-3 text-white mb-3">About Us</h1>
+        <h1 class="display-3 text-white mb-3">Terms & Conditions</h1>
     </div>
 </div>
 <!-- Header End -->
@@ -29,7 +29,7 @@ include("FrontendInclude/frontTopbar.php");
             <p>By accessing and using this website, you agree to be bound by these terms and conditions..</p>
             <h3 class="text-secondary mt-4">2. Intellectual Property</h3>
             <p>All content and materials on this website, including but not limited to text, images, graphics, logos,
-                and software, are the property of [LawFirmName]. The content is protected by copyright and other
+                and software, are the property of Justice Law Firm. The content is protected by copyright and other
                 intellectual property laws. You may not reproduce, modify, distribute, or republish any content from
                 this website without our prior written consent.ep.</p>
             <h3 class="text-secondary mt-4">3. Legal Advice</h3>
@@ -38,7 +38,7 @@ include("FrontendInclude/frontTopbar.php");
                 individual situation. We disclaim any responsibility for any reliance on the information provided on
                 this website without seeking legal advice from a licensed attorney.</p>
             <h3 class="text-secondary mt-4">4. Attorney-Client Relationship</h3>
-            <p>Your use of this website does not create an attorney-client relationship between you and [LawFirmName].
+            <p>Your use of this website does not create an attorney-client relationship between you and Justice Law Firm.
                 An attorney-client relationship is established only through a written agreement with our firm.</p>
             <h3 class="text-secondary mt-4">5. Privacy</h3>
             <p>We value your privacy. Please review our Privacy Policy to understand how we collect, use, and protect
@@ -52,7 +52,7 @@ include("FrontendInclude/frontTopbar.php");
             <!-- Add more sections as needed -->
             <h3 class="text-secondary mt-4">Contact Us</h3>
             <p>If you have any questions about these terms and conditions, you can contact us at
-                [contact@lawfirmname.com].</p>
+            <a href="mailto:info@justicelawfirm.com" class="text-decoration-none text-danger">JusticeLawfirm@gmail.com</a>.</p>
         </div>
     </div>
 </div>
