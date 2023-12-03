@@ -14,7 +14,7 @@ include("FrontendInclude/frontTopbar.php");
 <!-- Header End -->
 
 <!-- appoint lawyer code start  -->
-<div class="container-fluid">
+<div class="container-fluid hiringpg">
   <section class="book text-center">
     <?php
     if (isset($_SESSION['status'])) {
@@ -49,7 +49,7 @@ include("FrontendInclude/frontTopbar.php");
 
                 </select>
                 <label for="day" class="w-100 text-left mt-4">Appointment</label>
-                <input id="get-date" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
+                <input id="AppointDate" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
                   required>
                 <div class="w-100">
                   <input type="submit" class="btn btn-primary mt-3 float-start" onclick="hire()" value="Submit" onclick="hiring()" name="Appoint_Save">
@@ -124,7 +124,7 @@ include("FrontendInclude/frontTopbar.php");
                 <option value="Easy paisa">Easy Paisa</option>
                 <option value="Jazz Cash">Jazz Cash</option>
               </select><br>
-              <button type="submit" class="btn btn-danger float-start" onclick="Confirm()" name="PaymentSubmit">Confirm Payment</button>
+              <button type="submit" class="btn btn-danger float-start glowbtn" onclick="Confirm()" name="PaymentSubmit">Confirm Payment</button>
             </form>
           </div>
         </div>
@@ -138,19 +138,3 @@ include("FrontendInclude/frontTopbar.php");
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");
 ?>
-
-<style>
-  .icon-container {
-  display: inline-block;
-  animation: glow 2s infinite alternate;
-}
-
-@keyframes glow {
-  0% {
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
-  }
-  100% {
-    box-shadow: 0 0 20px rgba(0, 128, 0, 1);
-  }
-}
-</style>

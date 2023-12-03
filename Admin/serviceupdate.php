@@ -131,6 +131,12 @@ if (isset($_GET['ServiceIdupd'])) {
                                         <option value="Labor Law" <?php echo ($Servicetype === 'Labor Law') ? 'selected' : ''; ?>>Labor Law</option>
                                         <option value="Commercial Law" <?php echo ($Servicetype === 'Commercial Law') ? 'selected' : ''; ?>>Commercial Law</option>
                                         <option value="Criminal Law" <?php echo ($Servicetype === 'Criminal Law') ? 'selected' : ''; ?>>Criminal Law</option>
+                                        <option value="Criminal Law" <?php echo ($Servicetype === 'Bussiness Law') ? 'selected' : ''; ?>>Bussiness Law</option>
+                                        <option value="Criminal Law" <?php echo ($Servicetype === 'Bankrupty') ? 'selected' : ''; ?>>Bankrupty</option>
+                                        <option value="Criminal Law" <?php echo ($Servicetype === 'Cyber Criminal') ? 'selected' : ''; ?>>Cyber Criminal</option>
+                                        <option value="Criminal Law" <?php echo ($Servicetype === 'Environmental law') ? 'selected' : ''; ?>>Environmental law</option>
+                                        <option value="Criminal Law" <?php echo ($Servicetype === 'Consumer Protection') ? 'selected' : ''; ?>>Consumer Protection</option>
+
                                     </select>
                                 </div>
                                 <div class="form-group">

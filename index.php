@@ -8,12 +8,13 @@ include("FrontendInclude/frontHeader.php");
 <body class=''>
   <!-- index Page code start -->
   <section id="Reg_Section"
-    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover; height: 715px;">
+    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover;height:auto">
     <div class="container">
-      <div class="row" style="height: 100%;display: flex;align-items: center;">
-        <div class="col-12">
+      <div class="row d-flex justify-content-center" style="height:595px;">
+        <div class="col-12 d-flex align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
           <h1 class="text-center text-light">Welcome to Lawyer Website</h1>
-          <div id="Pcontent" class="d-flex justify-content-center">
+          <div id="Pcontent" class="">
             <p class="text-center text-light" id="banner_Content_p">Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Delectus rerum, unde, sapiente quam blanditiis doloribus fugiat expedita reiciendis perferendis,
               architecto ut esse dicta! Veniam nobis exercitationem, ab quos dolorum ipsa impedit. Culpa, hic.
@@ -104,6 +105,7 @@ include("FrontendInclude/frontHeader.php");
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

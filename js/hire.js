@@ -26,8 +26,8 @@ function Confirm() {
     let city = document.getElementById('city').value
     let paymentMode = document.getElementById('paymentMode').value
     if (full_name && email && lawyer_name && city && paymentMode) {
-        const message = `Your Name: ${full_name}\nEmail: ${email}\nLawyer Name: ${lawyer_name}\nCity: ${city}\nPayment Mode: ${paymentMode} \n \nIf this right so click OK button`;
-        alert(message);
+        const payment_message = `Your Name: ${full_name}\nEmail: ${email}\nLawyer Name: ${lawyer_name}\nCity: ${city}\nPayment Mode: ${paymentMode} \n \nIf this right so click OK button`;
+        alert(payment_message);
     } else {
         // Handle the case when any of the fields is empty
         alert("Please fill your payment details.");
@@ -44,8 +44,8 @@ function contact() {
     let validationCustomMessage = document.getElementById('validationCustomMessage').value;
 
     if (validationCustomName && validationCustomEmail && validationCustomPhone && validationCustomMessage) {
-        const message = `Your Name: ${validationCustomName}\nEmail: ${validationCustomEmail}\nPhone: ${validationCustomPhone}\nMessage: ${validationCustomMessage}`;
-        alert(message);
+        const Query_message = `Your Name: ${validationCustomName}\nEmail: ${validationCustomEmail}\nPhone: ${validationCustomPhone}\nMessage: ${validationCustomMessage}`;
+        alert(Query_message);
     } else {
         // Handle the case when any of the fields is empty
         alert("Please fill field form");
@@ -56,15 +56,16 @@ function contact() {
 // userQueries alert message 
 function hire() {
     let fullname = document.getElementById('fullname').value;
-    let service = document.getElementById('service').value;
+    let services = document.getElementById('services').value;
     let AppointDate = document.getElementById('AppointDate').value;
 
-    if (fullname && service && AppointDate) {
-        alert('Your Appointment suucessfully book');
+    if (fullname && services && AppointDate) {
+        const user_queries = `Full Name: ${fullname}\nService: ${services}\nAppointment Date: ${AppointDate}`;
+        alert(user_queries);
+        console.log(user_queries);
     } else {
         // Handle the case when any of the fields is empty
         alert("Please fill Booking form");
     }
 }
 
-  

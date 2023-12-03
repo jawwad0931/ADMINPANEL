@@ -1,0 +1,9 @@
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px #eefafff5; }
+    50% { box-shadow: 0 0 20px #eefafff5; }
+    100% { box-shadow: 0 0 5px #eefafff5; }
+}
+
+.consultGlow {
+    animation: glowing 2s infinite;
+}

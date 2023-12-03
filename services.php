@@ -8,7 +8,7 @@ include("FrontendInclude/frontTopbar.php");
 <div class="container-fluid py-5  mb-5"
   style="background-image:url('img/service.png');background-size:cover;height:600px;">
   <div class="container my-5 pt-5 pb-4">
-    <h1 class="display-3 text-white mb-3 animated slideInDown">Practice Areas</h1>
+    <h1 class="display-3 text-white mb-3 animated slideInDown">Services</h1>
   </div>
 </div>
 <!-- Header banner End -->

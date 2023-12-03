@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="./css/Register.css">
     <link rel="stylesheet" href="./css/services.css">
     <link rel="stylesheet" href="./css/About.css">
-    <link rel="stylesheet" href="./css/header.css">                            
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/Hire.css">    
+    <link rel="stylesheet" href="./css/home.css">                            
     <link rel="stylesheet" href="./css/landingpage.css">  
     <link rel="icon" href="./img/justiceLogo.png">
     <!-- Bootstrap CSS -->

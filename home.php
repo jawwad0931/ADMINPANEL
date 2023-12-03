@@ -11,7 +11,7 @@ include("FrontendInclude/frontTopbar.php");
     <section id="home" class="homeintro d-flex align-items-center justify-content-center" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(img/backgroundimg.jpg); background-size: 100% auto; background-position: center;">
         <div class="text-center">
             <h1 class="text-light">"Your Legal Ally – Justice Law Firm.<br /> Expertise, Dedication, Justice."</h1>
-            <a href="Hire.php" class="btn btn-outline-light mt-3">Book Your Consultation</a>
+            <a href="Hire.php" class="btn btn-outline-light mt-3 consultGlow">Book Your Consultation</a>
         </div>
     </section>
     <!--LANDINGPAGE ENDS HERE-->
@@ -19,7 +19,7 @@ include("FrontendInclude/frontTopbar.php");
     <!--Home page start-->
     <section class="lawyer" id="lawyer">
         <div class="container">
-            <h2 class="text-center text-secondary fw-bold text-bold">Meet our Lawyers</h2>
+            <h2 class="text-center text-secondary fw-bold text-bold">Our Lawyers</h2>
             <hr>
             <div class="row">
                 <div class="container">

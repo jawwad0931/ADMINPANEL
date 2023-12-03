@@ -39,29 +39,32 @@ include("FrontendInclude/frontTopbar.php");
         </div>
     </div>
 </section>
-<div class="container-fluid bg-light">
-    <div class="row p-5">
-        <div class="col-12 mt-5 p-5">
+
+<section class="bg-dark">
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-5">
             <div>
-                <h1 class="fw-light">About Justice Law Firm</h1>
-                <h1 class="fw-light mt-5">Southlake Attorneys Offering Family Law & Estate Planning Services</h1>
+                <h1 class="fw-light text-light">About Justice Law Firm</h1>
+                <h1 class="fw-light text-light mt-5">Experienced Attorneys Offering Family Law & Estate Planning Services</h1>
             </div>
             <div>
-                <p class="mt-5">Justice Law Firm has an excellent reputation and is known for providing
+                <p class="mt-5 text-light">Justice Law Firm has an excellent reputation and is known for providing
                     high-quality, individualized representation and attention to clients in need of legal services.
                     Our team of experienced attorneys can represent you in a variety of issues relating to family
                     law, divorce, estate planning, and collaborative law.</p>
-                <p class="mt-5">We understand that legal issues are complex and challenging, so we strive to make
+                <p class="mt-5 text-light">We understand that legal issues are complex and challenging, so we strive to make
                     your experience as simple and stress-free as possible. Our attorneys can handle the legal work
                     for you, maintaining open communication and keeping you informed along the way.</p>
             </div>
-            <hr>
-            <h6>To get in touch with the professionals at Justice Law Firm, please contact us online or call (817)
-                477-6756.</h6>
-            <hr>
+            <hr class="text-light">
+            <h6 class="text-light">To get in touch with the professionals at Justice Law Firm, please contact us online or call 03400028803</h6>
+            <hr class="text-light">
         </div>
     </div>
 </div>
+</section>
+
 
 
 <!-- What our client say -->
