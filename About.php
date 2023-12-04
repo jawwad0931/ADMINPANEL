@@ -74,7 +74,7 @@ include("FrontendInclude/frontTopbar.php");
     <hr>
     <div class="row d-flex justify-content-center">
         <div class="col-lg-8 col-md-8 col-sm-12">
-            <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": true}' style="height:350px; width:100%">
+            <div class="carousel" data-flickity='{ "groupCells": true , "autoPlay": true}' style="height:400px; width:100%">
                 <div class="carousel-cell" style="height: 100%;width:550px;background:#f8f6f6;">
                     <div id="content p-2" style="height: 50%;width:80%;background:#f8f6f6;">
                         <div class="py-3 d-flex align-items-center">
