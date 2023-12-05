@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2023 at 08:43 PM
+-- Generation Time: Dec 05, 2023 at 09:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -58,8 +58,10 @@ CREATE TABLE `payment` (
   `Id` int(100) NOT NULL,
   `Full_Name` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
+  `cardNumber` int(100) NOT NULL,
   `Lawyer_Name` varchar(100) NOT NULL,
   `City` varchar(100) NOT NULL,
+  `ZipCode` int(100) NOT NULL,
   `PaymentMode` varchar(100) NOT NULL,
   `Payment_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
@@ -68,16 +70,18 @@ CREATE TABLE `payment` (
 -- Dumping data for table `payment`
 --
 
-INSERT INTO `payment` (`Id`, `Full_Name`, `Email`, `Lawyer_Name`, `City`, `PaymentMode`, `Payment_status`) VALUES
-(4, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 0),
-(9, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 0),
-(10, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 1),
-(12, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 0),
-(13, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 1),
-(17, 'Ali', 'jawwad@gmail.com', ' Nawaz', 'city', 'Cash', 1),
-(18, 'ali', 'ab@gmail.com', ' Nawaz', 'city', 'Cash', 0),
-(19, 'Ali', 'jawwadk638@gmail.com', ' Nawaz', 'city', 'Cash', 0),
-(20, 'Ali', 'jawwadk638@gmail.com', ' Nawaz', 'city', 'Cash', 0);
+INSERT INTO `payment` (`Id`, `Full_Name`, `Email`, `cardNumber`, `Lawyer_Name`, `City`, `ZipCode`, `PaymentMode`, `Payment_status`) VALUES
+(4, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
+(9, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
+(10, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(12, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
+(13, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
+(17, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(18, 'ali', 'ab@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(19, 'Ali', 'jawwadk638@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(20, 'Ali', 'jawwadk638@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(22, 'ali', 'jawwad@gmail.com', 546574787, 'Nawaz', 'city', 32434, 'Master Card', 0),
+(23, 'Ali', 'ab@gmail.com', 342546578, 'Nawaz', 'Islamabad', 5647675, 'Master Card', 0);
 
 -- --------------------------------------------------------
 
@@ -100,7 +104,29 @@ CREATE TABLE `services` (
 INSERT INTO `services` (`Id`, `Image`, `Servicetype`, `LawyerDesc`, `fees`) VALUES
 (33, '../img/child-custody.jpeg', 'Family', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 20000),
 (34, '../img/avatar5.png', 'Criminal Law', ' \"Experience relentless advocacy and unwavering support with our Criminal Law Lawyer Services. At [Your Law Firm], our seasoned criminal defense attorneys are dedicated to protecting your rights and providing robust legal representation. Whether you are facing charges for offenses such as theft, assault, or white-collar crimes, our experts are here to guide you through the complexities of the legal system.', 76000),
-(35, '../img/avatar3.png', 'Labor Law', 'As a Personal Injury Lawyer, your primary responsibility is to represent individuals who have suffered harm due to accidents or negligence. Your tasks include conducting legal research, negotiating settlements, and representing clients in court. Key qualifications include a JD degree, bar admission, strong advocacy skills, and a deep understanding of personal injury law. Your role is crucial in helping clients seek compensation for injuries and navigating the complexities of the legal system to ensure fair outcomes.', 500000);
+(36, '', '', '', 0),
+(37, '', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `testimonial`
+--
+
+CREATE TABLE `testimonial` (
+  `Id` int(100) NOT NULL,
+  `LawyerName` varchar(200) NOT NULL,
+  `Experience` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `testimonial`
+--
+
+INSERT INTO `testimonial` (`Id`, `LawyerName`, `Experience`) VALUES
+(1, 'ali', 'ali is godd experience'),
+(4, 'jawwad is best', 'jawwad is everytime best'),
+(5, 'dsfds', 'dfsdfsdf');
 
 -- --------------------------------------------------------
 
@@ -180,7 +206,6 @@ CREATE TABLE `user-table2` (
 --
 
 INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
-(6, 'jawwad', 'jawwad@gmail.com', 2147483647, 'fsdafsdfsd'),
 (7, 'jawwad', 'jawwad@gmail.com', 2147483647, 'what is lawyer'),
 (8, 'jawwad', 'ab@gmail.com', 2147483647, 'what is the meaning of lawyer'),
 (9, '', '', 0, ''),
@@ -188,12 +213,7 @@ INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
 (11, 'khan', 'jawwad@gmail.com', 21474836, 'sadasrdeqwrew'),
 (12, 'jawwad', 'ab@gmail.com', 21474836, 'dfsdfds'),
 (13, 'khan', 'ab@gmail.com', 21474836, 'dasds'),
-(14, '', '', 0, ''),
-(15, '', '', 0, ''),
-(16, '', '', 0, ''),
 (17, '', '', 0, ''),
-(18, '', '', 0, ''),
-(19, '', '', 0, ''),
 (20, '', '', 0, ''),
 (21, '', '', 0, ''),
 (22, '', '', 0, ''),
@@ -228,6 +248,12 @@ ALTER TABLE `services`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `updateimage`
 --
 ALTER TABLE `updateimage`
@@ -259,19 +285,25 @@ ALTER TABLE `appointlawyer`
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
+-- AUTO_INCREMENT for table `testimonial`
+--
+ALTER TABLE `testimonial`
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `updateimage`
 --
 ALTER TABLE `updateimage`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `user-table`

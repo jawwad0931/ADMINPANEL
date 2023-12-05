@@ -66,12 +66,12 @@ include("FrontendInclude/frontTopbar.php");
                         </a></p>
                     <form action="contactcode.php" method="POST" class="row g-3 needs-validation" style="width: 100%;"
                         >
-                        <div class="row g-3">
+                        <div class="row g-2">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control" id="validationCustomName"
                                         placeholder="Your Name" name="Name" required>
-                                    <label for="validationCustomName" class="form-label">Your Name</label>
+                                    <label for="validationCustomName" class="form-label w-100">Your Name</label>
                                 </div>
                             </div>
                             <div class="col-md-6">

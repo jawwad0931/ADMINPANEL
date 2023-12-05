@@ -68,6 +68,11 @@
             <p>Users Payments</p>
           </a>
         </li>
+        <li class="nav-item">
+          <a href="testimonial.php" class="nav-link">
+            <p>Testimonial</p>
+          </a>
+        </li>
       </ul>
     </nav>
     <!-- /.sidebar-menu -->
