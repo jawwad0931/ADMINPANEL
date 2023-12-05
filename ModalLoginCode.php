@@ -1,4 +1,4 @@
-<!-- index page walay login aur register ka code hai -->
+<!-- index page walay login aur register ka code hai is page ka link index page ke form mai hai-->
 <?php
 session_start();
 include('Frontenddb/db.php');

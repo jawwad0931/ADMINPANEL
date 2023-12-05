@@ -1,4 +1,4 @@
-<!-- service update code here we can easily update services for frontend -->
+<!-- service ka page hai yahan se data from ki madad se service.php mai jayega -->
 <?php
 // Include code is here
 session_start();

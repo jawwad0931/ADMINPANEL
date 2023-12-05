@@ -1,19 +1,16 @@
+<!-- Terms and Condition wala page hai is page ka link footer mai hai -->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
 include("FrontendInclude/frontTopbar.php");
 ?>
-
-
-<!-- Header End -->
+<!-- Header start -->
 <div class="container-fluid py-5  mb-5" style="background-image:url('img/tr.jpg');background-size:cover;height:500px;">
     <div class="container my-5 pt-5 pb-4">
         <h1 class="display-3 text-white mb-3">Terms & Conditions</h1>
     </div>
 </div>
 <!-- Header End -->
-
-
 <!-- term&condition start -->
 <div class="container py-5">
     <div class="row text-center d-flex justify-content-center">
@@ -38,7 +35,8 @@ include("FrontendInclude/frontTopbar.php");
                 individual situation. We disclaim any responsibility for any reliance on the information provided on
                 this website without seeking legal advice from a licensed attorney.</p>
             <h3 class="text-secondary mt-4">4. Attorney-Client Relationship</h3>
-            <p>Your use of this website does not create an attorney-client relationship between you and Justice Law Firm.
+            <p>Your use of this website does not create an attorney-client relationship between you and Justice Law
+                Firm.
                 An attorney-client relationship is established only through a written agreement with our firm.</p>
             <h3 class="text-secondary mt-4">5. Privacy</h3>
             <p>We value your privacy. Please review our Privacy Policy to understand how we collect, use, and protect
@@ -52,12 +50,13 @@ include("FrontendInclude/frontTopbar.php");
             <!-- Add more sections as needed -->
             <h3 class="text-secondary mt-4">Contact Us</h3>
             <p>If you have any questions about these terms and conditions, you can contact us at
-            <a href="mailto:info@justicelawfirm.com" class="text-decoration-none text-danger">JusticeLawfirm@gmail.com</a>.</p>
+                <a href="mailto:info@justicelawfirm.com"
+                    class="text-decoration-none text-danger">JusticeLawfirm@gmail.com</a>.
+            </p>
         </div>
     </div>
 </div>
 <!-- term&condition end-->
-
 <?php
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");

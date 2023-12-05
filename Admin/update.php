@@ -1,4 +1,4 @@
-<!-- registered user code update here -->
+<!-- yeh unknown page hai -->
 <?php
 // include file is here
 include('Config/db.php');

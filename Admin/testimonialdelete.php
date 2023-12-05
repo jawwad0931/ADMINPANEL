@@ -1,4 +1,4 @@
-<!-- services updated data delete code here Here we can delete specific id which we click -->
+<!-- yahan testimonial ka data delete hoga -->
 <?php
 // includes file is here
 include('Config/db.php');

@@ -1,5 +1,4 @@
-<!-- This is update lawyer page code here we can delete home.php
-detail from update lawyer which is define in backend-->
+<!-- ye meet our lawyer ke data ko delete karne ke kaam ayega-->
 <?php
 include('Config/db.php');
 if (isset($_GET['deleteImgid'])) {

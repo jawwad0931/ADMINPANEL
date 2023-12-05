@@ -1,4 +1,6 @@
-<!-- user payment delete code is here -->
+<!-- user payment delete code is here
+aur yaad rahay payment ke liye sirf delete
+ka part rakha hai update nahi -->
 <?php
 include('Config/db.php');
 if (isset($_GET['paydltId'])) {

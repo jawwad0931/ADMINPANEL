@@ -1,4 +1,5 @@
-<!-- Registered Table data fetch here -->
+<!-- iss page ka yahan koi kaam nahi yeh page data ko insert karwata hai lekin hum
+ backend ke bajaye frontend se data ko insert kar rahay hain -->
 <?php
 // include Files code call here
 session_start();
@@ -36,9 +37,6 @@ if (isset($_POST['AddUser'])) {
         header('location: Register.php');
         $_SESSION['status'] = 'Password and confirmed password not match';
     }
-
-
-
 }
 ?>
 <!-- Here Define Logout code -->

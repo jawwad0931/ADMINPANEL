@@ -4,7 +4,6 @@ include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
 include("FrontendInclude/frontTopbar.php");
 ?>
-
 <!-- Header Start -->
 <div class="container-fluid py-5  mb-5"
     style="background-image:url('img/Contact.jfif');background-size:cover;height:600px;background-position:center">
@@ -13,7 +12,6 @@ include("FrontendInclude/frontTopbar.php");
     </div>
 </div>
 <!-- Header End -->
-
 <!-- Contact Start -->
 <div class="container-fluid py-5">
     <div class="container-fluid">
@@ -51,63 +49,61 @@ include("FrontendInclude/frontTopbar.php");
                 </div>
             </div>
             <div class="col-md-6">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe
-                    class="embed-responsive-item"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.842895042729!2d67.03111787495672!3d24.8350457462749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dc59d94aae5%3A0xd52c8da8236bbcf3!2sGlass%20Tower!5e0!3m2!1sen!2s!4v1692656072364!5m2!1sen!2s"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.842895042729!2d67.03111787495672!3d24.8350457462749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33dc59d94aae5%3A0xd52c8da8236bbcf3!2sGlass%20Tower!5e0!3m2!1sen!2s!4v1692656072364!5m2!1sen!2s"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
             <div class="col-md-6">
-                <div class="wow fadeInUp">
-                    <h3 class="pb-2 text-secondary">Fill Your Message</h3>
-                    <p class="mb-4 text-secondary">Contact Us for any query and then we are able to help you about Lawyer.
-                        </a></p>
-                    <form action="contactcode.php" method="POST" class="row g-3 needs-validation" style="width: 100%;"
-                        >
-                        <div class="row g-2">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="validationCustomName"
-                                        placeholder="Your Name" name="Name" required>
-                                    <label for="validationCustomName" class="form-label w-100">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="validationCustomEmail"
-                                        placeholder="Your Email" name="Email" required>
-                                    <label for="validationCustomEmail" class="form-label">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="number" class="form-control" id="validationCustomPhone"
-                                        placeholder="Phone" name="Phone" required>
-                                    <label for="validationCustomPhone" class="form-label">Phone No</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here"
-                                        id="validationCustomMessage" style="height: 150px" name="Question"
-                                        required></textarea>
-                                    <label for="validationCustomMessage" class="form-label">Question</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-outline-primary btn-md w-100 py-2" onclick="contact()" name="Submit_Message">Send Message</button>
+                <h3 class="pb-2 text-secondary">Fill Your Message</h3>
+                <p class="mb-4 text-secondary">Contact Us for any query and then we are able to help you about
+                    Lawyer.
+                </p>
+                <!-- Contact Form ka data yahan se database mai ja raha hai-->
+                <form action="contactcode.php" method="POST" class="row g-3 needs-validation" style="width: 100%;">
+                    <div class="row g-2">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="validationCustomName"
+                                    placeholder="Your Name" name="Name" required>
+                                <label for="validationCustomName" class="form-label w-100">Your Name</label>
                             </div>
                         </div>
-                    </form>
-                </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="validationCustomEmail"
+                                    placeholder="Your Email" name="Email" required>
+                                <label for="validationCustomEmail" class="form-label">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <input type="number" class="form-control" id="validationCustomPhone" placeholder="Phone"
+                                    name="Phone" required>
+                                <label for="validationCustomPhone" class="form-label">Phone No</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a message here"
+                                    id="validationCustomMessage" style="height: 150px" name="Question"
+                                    required></textarea>
+                                <label for="validationCustomMessage" class="form-label">Question</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-outline-primary btn-md w-100 py-2" onclick="contact()"
+                                name="Submit_Message">Send Message</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </div>
 <!-- Contact End -->
-
 <?php
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");

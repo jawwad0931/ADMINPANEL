@@ -1,4 +1,4 @@
-<!-- Appoint lawyer wala code yahan -->
+<!-- Appoint lawyer wala code yahan Appointment hai aur payment method use kya jaa raha hai-->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");
@@ -12,7 +12,6 @@ include("FrontendInclude/frontTopbar.php");
   </div>
 </div>
 <!-- Header End -->
-
 <!-- appoint lawyer code start  -->
 <div class="container-fluid hiringpg">
   <section class="book text-center">
@@ -52,7 +51,8 @@ include("FrontendInclude/frontTopbar.php");
                 <input id="AppointDate" type="date" name="AppointDate" class="form-control" placeholder="Enter Date"
                   required>
                 <div class="w-100">
-                  <input type="submit" class="btn btn-primary mt-3 float-start" onclick="hire()" value="Submit" onclick="hiring()" name="Appoint_Save">
+                  <input type="submit" class="btn btn-primary mt-3 float-start" onclick="hire()" value="Submit"
+                    onclick="hiring()" name="Appoint_Save">
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@ include("FrontendInclude/frontTopbar.php");
             <form action="paymentCode.php" method="POST" class="form-group">
               <h3 class="payment">------------Payments------------</h3>
               <div class="paymentsImg p-4">
-              <img src="img/easy.png" height="30px" width="30px">
+                <img src="img/easy.png" height="30px" width="30px">
                 <img src="img/jazz.png" height="30px" width="30px">
                 <img src="img/mastercard.png" height="30px" width="30px">
                 <img src="img/cash.png" height="30px" width="30px">
@@ -135,7 +135,8 @@ include("FrontendInclude/frontTopbar.php");
                 <option value="Easy paisa">Easy Paisa</option>
                 <option value="Jazz Cash">Jazz Cash</option>
               </select><br>
-              <button type="submit" class="btn btn-danger float-start glowbtn" onclick="Confirm()" name="PaymentSubmit">Confirm Payment</button>
+              <button type="submit" class="btn btn-danger float-start glowbtn" onclick="Confirm()"
+                name="PaymentSubmit">Confirm Payment</button>
             </form>
           </div>
         </div>
@@ -144,22 +145,26 @@ include("FrontendInclude/frontTopbar.php");
   </section>
 </div>
 <!-- end appoint lawyer code start  -->
-
 <?php
 include("FrontendInclude/backbutton.php");
 include("FrontendInclude/frontFooter.php");
 ?>
-
-
 <style>
   @keyframes glowing {
-    0% { box-shadow: 0 0 5px #ff0000; }
-    50% { box-shadow: 0 0 10px #ff0000; }
-    100% { box-shadow: 0 0 5px #ff0000; }
-}
+    0% {
+      box-shadow: 0 0 5px #ff0000;
+    }
 
-.glowbtn {
+    50% {
+      box-shadow: 0 0 10px #ff0000;
+    }
+
+    100% {
+      box-shadow: 0 0 5px #ff0000;
+    }
+  }
+
+  .glowbtn {
     animation: glowing 2s infinite;
-}
-
+  }
 </style>

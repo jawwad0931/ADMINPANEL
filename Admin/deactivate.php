@@ -1,4 +1,4 @@
-<!-- Deactivate code here -->
+<!-- Deactivate code here jo Specific id par call hoga-->
 <?php
 include('Config/db.php');
 if (isset($_GET['deactivateId'])) {

@@ -1,4 +1,4 @@
-<!-- service update code here we can easily update services for frontend -->
+<!-- ye page testimonial ko fetch kar raha hai -->
 <?php
 // Include code is here
 session_start();

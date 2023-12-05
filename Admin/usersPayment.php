@@ -7,7 +7,6 @@ include('includes/header.php');
 include('includes/sidebar.php');
 include('includes/topbar.php');
 ?>
-
 <!-- user payment ka detail yahan se dekhan ja raha hai -->
 <div class="content-wrapper" style="height:;">
     <!-- Content Header -->
@@ -102,7 +101,6 @@ include('includes/topbar.php');
     </div>
 </div>
 </div>
-
 <!-- footer ki file ye hai -->
 <?php include('includes/footer.php');
 ?>

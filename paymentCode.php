@@ -1,8 +1,7 @@
-<!-- payment ka code yahan hai -->
+<!-- payment ka code yahan hai payment se data wahan jaa raha hai -->
 <?php
 session_start();
 ?>
-
 <!-- payment code -->
 <?php
 include("Frontenddb/db.php");

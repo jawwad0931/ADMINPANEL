@@ -1,4 +1,4 @@
-<!-- Here insert query run which data i want to insert to apply here -->
+<!-- yahan testimonial se form ki madad se data ayega -->
 <?php
 session_start();
 // Include file is here

@@ -1,4 +1,4 @@
-<!-- this code is delete user queries -->
+<!-- this code is delete user queries jo ke frontend ke contact walay page se data layega -->
 <?php
 // Includes files are here
 include('Config/db.php');

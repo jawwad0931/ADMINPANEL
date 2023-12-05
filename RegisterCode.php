@@ -2,9 +2,6 @@
 <?php
 session_start();
 include('Frontenddb/db.php');
-
-
-
 if (isset($_POST['AddUser'])) {
     $Name = $_POST['Name'];
     $Email = $_POST['Email'];
@@ -37,7 +34,6 @@ if (isset($_POST['AddUser'])) {
     }
 }
 ?>
-
 <!-- logout button used ho raha hai index page mai -->
 <?php
 if (isset($_POST['logoutbtn'])) {

@@ -1,4 +1,4 @@
-<!-- index page hai yahan user login aur register karega -->
+<!-- index page hai yahan user login aur register karega website ka page yahan se register kiya jaa raha hai-->
 <?php
 include("Frontenddb/db.php");
 include("FrontendInclude/frontHeader.php");

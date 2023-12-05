@@ -1,9 +1,9 @@
-<!-- Lawyer Update Code which we change from backend for our website home page -->
+<!-- yahan se hum meet our lawyer ko update karengay kiunke wo backend ka part hai aur 
+frontend mai uska data retrieve hoga-->
 <?php
 session_start();
 include('Config/db.php');
 include('Authentication.php');
-
 if (isset($_POST['AddImage'])) {
     // Sanitize input data to prevent SQL injection
     $Name = mysqli_real_escape_string($conn, $_POST["Name"]);
