@@ -91,6 +91,7 @@ include('includes/topbar.php');
                 <th>Lawyer Name</th>
                 <th>Description</th>
                 <th>Image</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -110,9 +111,9 @@ include('includes/topbar.php');
                             <td>$Name</td>
                             <td>$Desc</td>
                             <td>$image</td>
-                            <td>
-                            <a href='updateImage.php?updImgId=$id' class='btn btn-outline-success m-1'>Edit</a>
-                            <a href='deleteImage.php?deleteImgid=$id' class='btn btn-outline-danger m-1'>Delete</a>
+                            <td class='d-flex'>
+                            <a href='updateImage.php?updImgId=$id' class='fs-1'><i class='ion-edit text-success' style='font-size:25px'></i></a>
+                            <a href='deleteImage.php?deleteImgid=$id' class=''><i class='ion-trash-a text-danger ml-3' style='font-size:25px'></i></a>
                             </td>
                             </tr>";
                   }

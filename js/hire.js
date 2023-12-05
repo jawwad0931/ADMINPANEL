@@ -22,11 +22,13 @@ $(document).ready(function() {
 function Confirm() {
     let full_name = document.getElementById('full_name').value
     let email = document.getElementById('email').value
+    let cardNumber = document.getElementById('cardNumber').value
     let lawyer_name = document.getElementById('lawyer_name').value
     let city = document.getElementById('city').value
+    let ZipCode = document.getElementById('ZipCode').value
     let paymentMode = document.getElementById('paymentMode').value
     if (full_name && email && lawyer_name && city && paymentMode) {
-        const payment_message = `Your Name: ${full_name}\nEmail: ${email}\nLawyer Name: ${lawyer_name}\nCity: ${city}\nPayment Mode: ${paymentMode} \n \nIf this right so click OK button`;
+        const payment_message = `Your Name: ${full_name}\nEmail: ${email}\nCardNumber : ${cardNumber}\nLawyer Name: ${lawyer_name}\nCity: ${city}\nZipCode :${ZipCode}\nPayment Mode: ${paymentMode} \n \nIf this right so click OK button`;
         alert(payment_message);
     } else {
         // Handle the case when any of the fields is empty

@@ -80,7 +80,8 @@ include('includes/topbar.php');
                                         }
                                         echo "</td> 
                                         <td scope='row'>
-                                            <a href='paymentDelete.php?paydltId=" . $row['Id'] . "' class='btn btn-outline-danger'>Delete</a>
+                                            <a href='paymentDelete.php?paydltId=" . $row['Id'] . "'><i class='ion-trash-a text-danger ml-3' style='font-size:25px'></i></a>
+
                                         </td> 
                                         </tr>";
                                     }

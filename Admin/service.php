@@ -129,9 +129,9 @@ include('includes/topbar.php');
                                             <td>$Servicetype</td>
                                             <td>$LawyerDesc</td>
                                             <td>$fees</td>
-                                            <td>
-                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='btn btn-outline-primary m-2'>Edit</a>
-                                                <a href='servicedelete.php?servicedltid=$Id' class='btn btn-outline-danger m-2'>Delete</a>
+                                            <td class='d-flex'>
+                                                <a href='serviceupdate.php?ServiceupdId=$Id' class='fs-1'><i class='ion-edit text-success' style='font-size:25px'></i></a>
+                                                <a href='servicedelete.php?servicedltid=$Id' class=''><i class='ion-trash-a text-danger ml-3' style='font-size:25px'></i></a>
                                             </td>
                                         </tr>";
                                     }

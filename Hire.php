@@ -95,21 +95,32 @@ include("FrontendInclude/frontTopbar.php");
               <input type="text" name="Full_Name" class="form-control" id="full_name" required><br>
               <label for="email" class="float-end">Email</label><br>
               <input type="text" name="Email" id="email" class="form-control" required><br>
+              <label for="cardNumber" class="float-end">Card Number</label><br>
+              <input type="number" name="cardNumber" id="cardNumber" class="form-control" required><br>
               <label for="LawyerName" class="float-end">Lawyer Name</label><br>
               <input type="text" name="Lawyer_Name" id="lawyer_name" class="form-control" required><br>
-              <label for="city" class="float-end">City</label><br>
-              <select name="City" id="city" class="form-control" required>
-                <option value=""></option>
-                <option value="city">Karachi</option>
-                <option value="city">Lahore</option>
-                <option value="city">Islamabad</option>
-                <option value="city">Faisalabad</option>
-                <option value="city">Multan</option>
-                <option value="city">Quetta</option>
-                <option value="city">Peshawar</option>
-                <option value="city">Sahiwal</option>
-                <option value="city">Murree</option>
-              </select><br>
+              <div class="row">
+                <div class="col-6">
+                  <label for="city" class="float-end">City</label><br>
+                  <select name="City" id="city" class="form-control" required>
+                    <option value=""></option>
+                    <option value="Karachi">Karachi</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Faisalabad">Faisalabad</option>
+                    <option value="Multan">Multan</option>
+                    <option value="Quetta">Quetta</option>
+                    <option value="Peshawar">Peshawar</option>
+                    <option value="Sahiwal">Sahiwal</option>
+                    <option value="Murree">Murree</option>
+                  </select><br>
+                </div>
+                <div class="col-6">
+                  <label for="ZipCode" class="float-end">Zip Code</label><br>
+                  <input type="number" name="ZipCode" id="ZipCode" class="form-control" required><br>
+                  <br>
+                </div>
+              </div>
               <label for="mode" class="float-end">Mode of Payment</label>
               <div class="float-start mx-3 mb-1">
                 <img src="img/easy.png" height="25px" width="25px">

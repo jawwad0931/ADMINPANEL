@@ -58,7 +58,8 @@ include('includes/topbar.php');
                       <td scope='row'> " . $row['Phone'] . "</td>
                       <td scope='row'> " . $row['Question'] . "</td> 
                       <td scope='row'>
-                          <a href='questDelete.php?questdltId=" . $row['Id'] . "' class='btn btn-outline-danger'>Delete</a>
+                          <a href='questDelete.php?questdltId=" . $row['Id'] . "'><i class='ion-trash-a text-danger ml-3' style='font-size:25px'></i></a>
+
                       </td> 
                     </tr>";
 
