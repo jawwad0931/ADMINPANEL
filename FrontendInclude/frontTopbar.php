@@ -17,23 +17,23 @@ include("FrontendInclude/frontHeader.php");
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03" style="margin-right:45px;">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="home.php">Home</a>
+          <a class="nav-link text-dark active" aria-current="page" href="home.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="About.php">About</a>
+          <a class="nav-link text-dark active" aria-current="page" href="About.php">About</a>
         </li>
         <!-- ye pending hai -->
         <!-- <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="#">Team</a>
+          <a class="nav-link text-dark active" aria-current="page" href="#">Team</a>
         </li> -->
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="services.php">Services</a>
+          <a class="nav-link text-dark active" aria-current="page" href="services.php">Services</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="Contact.php">Contact</a>
+          <a class="nav-link text-dark active" aria-current="page" href="Contact.php">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-light active" aria-current="page" href="Hire.php">Appointment</a>
+          <a class="nav-link text-dark active" aria-current="page" href="Hire.php">Appointment</a>
         </li>
         <li>
           <div class="dropdown">
