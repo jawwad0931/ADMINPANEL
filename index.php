@@ -21,7 +21,7 @@ include("FrontendInclude/frontHeader.php");
           <!-- yahan modal define hai register ke liya -->
           <div class="banner_btn">
             <!--Register Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Registered Here
             </button>
             <!-- Modal -->
@@ -77,7 +77,7 @@ include("FrontendInclude/frontHeader.php");
           <!-- yahan modal define hai login ke liya -->
           <div class="banner_btn">
             <!--Login Button trigger modal -->
-            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#login-modal">
+            <button type="button" class="btn btn-primary btn-sm mt-3" data-bs-toggle="modal" data-bs-target="#login-modal">
               Login Here
             </button>
             <!-- Modal -->

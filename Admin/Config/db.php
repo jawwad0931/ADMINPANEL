@@ -1,8 +1,6 @@
 <!-- Backend Database Connection -->
 <?php
 $conn = mysqli_connect('localhost:3306','root','','phpAdminPanel');
-
-
 // if connection does not work use below code
 // if(!$conn){
 //     die('Error Found');

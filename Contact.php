@@ -25,7 +25,7 @@ include("FrontendInclude/frontTopbar.php");
                                 style="width: 45px; height: 45px;">
                                 <i class="fa fa-map-marker-alt text-secondary"></i>
                             </div>
-                            <span class="text-secondary">Clifton,Karachi,Pakistan</span>
+                            <span class=""><a class="text-decoration-none text-secondary fs-6 fw-bold" href="https://www.google.com/maps/place/Clifton,+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.818303,66.999063,14z/data=!3m1!4b1!4m6!3m5!1s0x3eb33dbbdc1875bf:0x6a6572ab3a66fed8!8m2!3d24.8269877!4d67.025096!16zL20vMGMwdmti?entry=ttu">Clifton,Karachi,Pakistan</a></span>
                         </div>
                     </div>
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.3s">
@@ -34,7 +34,7 @@ include("FrontendInclude/frontTopbar.php");
                                 style="width: 45px; height: 45px;">
                                 <i class="fa fa-envelope-open text-secondary"></i>
                             </div>
-                            <span class="text-secondary">Jawwadk638@gamil.com</span>
+                            <span class=""><a class="text-decoration-none text-secondary fs-6 fw-bold" href="mailto:info@jobprep.com">Jawwadk638@gamil.com</a></span>
                         </div>
                     </div>
                     <div class="col-md-4 wow fadeIn" data-wow-delay="0.5s">
@@ -43,7 +43,7 @@ include("FrontendInclude/frontTopbar.php");
                                 style="width: 45px; height: 45px;">
                                 <i class="fa fa-phone-alt text-secondary"></i>
                             </div>
-                            <span class="text-secondary">+9278965214</span>
+                            <span class=""><a class="text-decoration-none text-secondary fs-6 fw-bold" href="tel:+923085499310">+923400028803</a></span>
                         </div>
                     </div>
                 </div>

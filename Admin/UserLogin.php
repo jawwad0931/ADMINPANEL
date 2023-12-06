@@ -11,12 +11,12 @@ if (isset($_SESSION['auth'])) {
 }
 ?>
 <!-- Admin Login ka code yahan hai jo backend mai hai-->
-<div class="container-fluid" style="background-image:url('Asset/dist/img/LoginImage.jpg'); background-size:cover;">
+<div class="container-fluid" style="background-image:url('Asset/dist/img/userLogin.jpg'); background-size:cover;background-position:center;">
 <section class="d-flex flex-column min-vh-100 justify-content-center align-items-center">
   <div class="container">
     <div class="row">
       <div class="col-md-10 mx-auto rounded shadow bg-white">
-        <div class="row">
+        <div class="row shadow-lg bg-body-tertiary rounded">
           <div class="col-md-6">
             <div class="m-5 text-center">
               <h1>Login Admin Panel</h1>
