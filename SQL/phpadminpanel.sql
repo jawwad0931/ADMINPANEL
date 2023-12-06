@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2023 at 09:34 PM
+-- Generation Time: Dec 06, 2023 at 11:13 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -40,8 +40,8 @@ CREATE TABLE `appointlawyer` (
 --
 
 INSERT INTO `appointlawyer` (`Id`, `FullName`, `Serivce`, `AppointDate`, `status`) VALUES
-(1, 'hakem', 'advocate', '2023-11-14', 1),
-(2, 'muhammad', 'Family', '2023-11-08', 1),
+(1, 'hakem', 'advocate', '2023-11-14', 0),
+(2, 'muhammad', 'Family', '2023-11-08', 0),
 (3, 'Malik khan', 'Advocate', '2023-11-14', 1),
 (4, 'add', 'Family', '2023-12-12', 0),
 (5, 'muhammad', 'Environmental Law', '2023-12-07', 0),
@@ -71,11 +71,11 @@ CREATE TABLE `payment` (
 --
 
 INSERT INTO `payment` (`Id`, `Full_Name`, `Email`, `cardNumber`, `Lawyer_Name`, `City`, `ZipCode`, `PaymentMode`, `Payment_status`) VALUES
-(4, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
-(9, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
-(10, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(4, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(9, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
+(10, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
 (12, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
-(13, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 0),
+(13, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
 (17, 'Ali', 'jawwad@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
 (18, 'ali', 'ab@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
 (19, 'Ali', 'jawwadk638@gmail.com', 0, ' Nawaz', 'city', 0, 'Cash', 1),
@@ -102,10 +102,7 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`Id`, `Image`, `Servicetype`, `LawyerDesc`, `fees`) VALUES
-(33, '../img/child-custody.jpeg', 'Family', 'As a Family Lawyer, you specialize in providing legal counsel on issues like divorce, child custody, and domestic violence. Responsibilities include case management, court representation, and mediation. Essential qualifications include a JD degree, bar admission, strong communication, negotiation skills, and empathy. The role involves guiding clients through legal processes, ensuring their rights are protected, and seeking favorable resolutions.', 20000),
-(34, '../img/avatar5.png', 'Criminal Law', ' \"Experience relentless advocacy and unwavering support with our Criminal Law Lawyer Services. At [Your Law Firm], our seasoned criminal defense attorneys are dedicated to protecting your rights and providing robust legal representation. Whether you are facing charges for offenses such as theft, assault, or white-collar crimes, our experts are here to guide you through the complexities of the legal system.', 76000),
-(36, '', '', '', 0),
-(37, '', '', '', 0);
+(34, '../img/avatar5.png', 'Criminal Law', ' \"Experience relentless advocacy and unwavering support with our Criminal Law Lawyer Services. At [Your Law Firm], our seasoned criminal defense attorneys are dedicated to protecting your rights and providing robust legal representation. Whether you are facing charges for offenses such as theft, assault, or white-collar crimes, our experts are here to guide you through the complexities of the legal system.', 76000);
 
 -- --------------------------------------------------------
 
@@ -125,8 +122,7 @@ CREATE TABLE `testimonial` (
 
 INSERT INTO `testimonial` (`Id`, `LawyerName`, `Experience`) VALUES
 (1, 'ali', 'ali is godd experience'),
-(4, 'jawwad is best', 'jawwad is everytime best'),
-(5, 'dsfds', 'dfsdfsdf');
+(4, 'jawwad is best', 'jawwad is everytime best');
 
 -- --------------------------------------------------------
 
@@ -161,7 +157,7 @@ CREATE TABLE `user-table` (
   `Id` int(100) NOT NULL,
   `Name` varchar(100) NOT NULL,
   `Email` varchar(100) NOT NULL,
-  `Phone` int(50) NOT NULL,
+  `Phone` int(100) NOT NULL,
   `Password` varchar(100) NOT NULL,
   `role_as` tinyint(4) NOT NULL DEFAULT 0,
   `Created at` timestamp NULL DEFAULT NULL
@@ -185,7 +181,8 @@ INSERT INTO `user-table` (`Id`, `Name`, `Email`, `Phone`, `Password`, `role_as`,
 (20, 'malika', 'malika@gmail.com', 2147483647, '123', 0, NULL),
 (21, 'honeySingh', 'honey@gmail.com', 2147483647, '123', 0, NULL),
 (22, 'new', 'new@gmail.com', 2147483647, '321', 0, NULL),
-(23, 'max', 'max@gmail.com', 21474836, '1234', 0, NULL);
+(23, 'max', 'max@gmail.com', 21474836, '1234', 0, NULL),
+(24, 'Amir Ali', 'AmirAlit@gmail.com', 2147483647, '123', 0, NULL);
 
 -- --------------------------------------------------------
 
@@ -208,8 +205,6 @@ CREATE TABLE `user-table2` (
 INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
 (7, 'jawwad', 'jawwad@gmail.com', 2147483647, 'what is lawyer'),
 (8, 'jawwad', 'ab@gmail.com', 2147483647, 'what is the meaning of lawyer'),
-(9, '', '', 0, ''),
-(10, '', '', 0, ''),
 (11, 'khan', 'jawwad@gmail.com', 21474836, 'sadasrdeqwrew'),
 (12, 'jawwad', 'ab@gmail.com', 21474836, 'dfsdfds'),
 (13, 'khan', 'ab@gmail.com', 21474836, 'dasds'),
@@ -223,7 +218,8 @@ INSERT INTO `user-table2` (`Id`, `Name`, `Email`, `Phone`, `Question`) VALUES
 (26, 'khan', 'jawwad@gmail.com', 2147483647, 'sdfsdfsd'),
 (27, 'khan', 'ab@gmail.com', 2147483647, 'saSFDSDFs'),
 (28, 'asAS', 'jawwadk638@gmail.com', 21474836, 'dasfdsfds'),
-(29, 'jawwad', 'jawwadk638@gmail.com', 2147483647, 'sdad3423dsfsd');
+(29, 'jawwad', 'jawwadk638@gmail.com', 2147483647, 'sdad3423dsfsd'),
+(30, 'jawwad', 'ab@gmail.com', 2147483647, 'sdsfsf');
 
 --
 -- Indexes for dumped tables
@@ -309,13 +305,13 @@ ALTER TABLE `updateimage`
 -- AUTO_INCREMENT for table `user-table`
 --
 ALTER TABLE `user-table`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `user-table2`
 --
 ALTER TABLE `user-table2`
-  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `Id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
