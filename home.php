@@ -39,7 +39,7 @@ include("FrontendInclude/frontTopbar.php");
                                 </div>
                                 <div class="lawyer-over">
                                     <h4 class="hidden-md-down fs-3"> Connect Our Lawyers</h4>
-                                    <a href="Hire.php" class="btn btn-light btn-sm">Connect us</a>
+                                    <a href="Hire.php" class="btn btn-light btn-sm">Appoint Us</a>
                                 </div>
                             </a>
                         </div>

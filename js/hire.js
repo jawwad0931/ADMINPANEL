@@ -50,7 +50,7 @@ function contact() {
         alert(Query_message);
     } else {
         // Handle the case when any of the fields is empty
-        alert("Please fill field form");
+        alert("Please fill contact form");
     }
 }
 
@@ -66,7 +66,7 @@ function hire() {
         console.log(user_queries);
     } else {
         // Handle the case when any of the fields is empty
-        alert("Please fill Booking form");
+        alert("Please fill the Booking Form");
     }
 }
 

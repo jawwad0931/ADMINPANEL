@@ -5,10 +5,9 @@ include("FrontendInclude/frontHeader.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
-<body class=''>
+<body style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover;height:auto">
   <!-- index Page code start -->
-  <section id="Reg_Section"
-    style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/register.jpg'); background-size: cover;height:auto">
+  <section id="Reg_Section">
     <div class="container">
       <div class="row d-flex justify-content-center" style="height:595px;">
         <div class="col-12 d-flex align-items-center justify-content-center">
